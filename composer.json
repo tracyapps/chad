@@ -1,0 +1,32 @@
+{
+	"name": "flagshipwp/chad",
+	"description": "The most advanced WordPress Starter theme ever created.",
+	"keywords": ["wordpress", "theme", "flagship"],
+	"homepage": "https://flagshipwp.com",
+	"type": "wordpress-theme",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Robert Neu",
+			"email": "rob@flagshipwp.com",
+			"homepage": "https://flagshipwp.com"
+		},
+		{
+			"name": "Gary Jones",
+			"homepage": "http://gamajo.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/flagshipwp/chad/issues",
+		"forum": "http://community.flagshipwp.com/category/chad"
+	},
+	"config": {
+		"vendor-dir": "assets/composer"
+	},
+	"require": {
+		"justintadlock/hybrid-core": "dev-dev",
+		"flagshipwp/flagship-library": "~1.4",
+		"zamoose/themehookalliance": "dev-master",
+		"composer/installers": "~1.0"
+	}
+}
