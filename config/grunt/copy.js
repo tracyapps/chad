@@ -42,6 +42,12 @@ module.exports = {
 		files: [
 			{
 				expand: true,
+				cwd: '<%= paths.authorAssets %>includes',
+				src: ['**/*'],
+				dest: 'includes'
+			},
+			{
+				expand: true,
 				cwd: '<%= paths.composer %>justintadlock/hybrid-core',
 				src: ['**/*'],
 				dest: '<%= paths.hybridCore %>'

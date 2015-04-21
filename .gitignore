@@ -6,3 +6,6 @@ logs
 .DS_Store
 dist
 video
+node_modules/grunt-newer/.cache
+node_modules/grunt-jsbeautifier/.idea
+node_modules/.bin

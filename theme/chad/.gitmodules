@@ -1,3 +1,0 @@
-[submodule "deploy_theme"]
-    path = theme/chad
-    url = git://github.com/tracyapps/chad.git
