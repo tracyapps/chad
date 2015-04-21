@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chad Lawson 2.0.0\n"
 "Report-Msgid-Bugs-To: Robert Neu <translations@flagshipwp.com>\n"
-"POT-Creation-Date: 2015-04-21 22:24:15+00:00\n"
+"POT-Creation-Date: 2015-04-21 22:40:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,156 +26,128 @@ msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/classes/author-box.php:56
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-single.php:49
-#: assets/theme/includes/vendor/flagship-library/admin/classes/author-box.php:56
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-single.php:49
 #: includes/vendor/flagship-library/admin/classes/author-box.php:56
 #: includes/vendor/flagship-library/templates/author-box-single.php:49
 msgid "Google+"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/classes/author-box.php:57
-#: assets/theme/includes/vendor/flagship-library/admin/classes/author-box.php:57
 #: includes/vendor/flagship-library/admin/classes/author-box.php:57
 msgid "Twitter (Without @)"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/classes/author-box.php:58
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-single.php:57
-#: assets/theme/includes/vendor/flagship-library/admin/classes/author-box.php:58
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-single.php:57
 #: includes/vendor/flagship-library/admin/classes/author-box.php:58
 #: includes/vendor/flagship-library/templates/author-box-single.php:57
 msgid "Facebook"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:62
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:62
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:62
 msgid "Drop Cap"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:67
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:67
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:67
 msgid "Pull Quote Left"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:73
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:73
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:73
 msgid "Pull Quote Right"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:79
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:79
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:79
 msgid "Intro Paragraph"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:85
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:118
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:85
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:118
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:85
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:118
 msgid "Call to Action"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:92
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:92
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:92
 msgid "Feature Box"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:99
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:99
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:99
 msgid "Code Block"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:103
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:103
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:103
 msgid "Buttons"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:106
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:106
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:106
 msgid "Standard"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:112
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:112
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:112
 msgid "Standard Block"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/admin/functions/tiny-mce.php:124
-#: assets/theme/includes/vendor/flagship-library/admin/functions/tiny-mce.php:124
 #: includes/vendor/flagship-library/admin/functions/tiny-mce.php:124
 msgid "Call to Action Block"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/classes/footer-widgets.php:73
-#: assets/theme/includes/vendor/flagship-library/classes/footer-widgets.php:73
 #: includes/vendor/flagship-library/classes/footer-widgets.php:73
 msgid "Footer %d"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/classes/footer-widgets.php:74
-#: assets/theme/includes/vendor/flagship-library/classes/footer-widgets.php:74
 #: includes/vendor/flagship-library/classes/footer-widgets.php:74
 msgid "Footer %d widget area."
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/classes/search-form.php:47
-#: assets/theme/includes/vendor/flagship-library/classes/search-form.php:47
 #: includes/vendor/flagship-library/classes/search-form.php:47
 msgid "Search site"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/classes/search-form.php:65
-#: assets/theme/includes/vendor/flagship-library/classes/search-form.php:65
 #: includes/vendor/flagship-library/classes/search-form.php:65
 msgid "Search this website"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/classes/search-form.php:85
 #: assets/composer/flagshipwp/flagship-library/classes/search-form.php:86
-#: assets/theme/includes/vendor/flagship-library/classes/search-form.php:85
-#: assets/theme/includes/vendor/flagship-library/classes/search-form.php:86
 #: includes/vendor/flagship-library/classes/search-form.php:85
 #: includes/vendor/flagship-library/classes/search-form.php:86
 msgid "Search"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:35
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:35
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:35
 msgid "Breadcrumbs"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:36
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:36
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:36
 msgid "Choose where you would like breadcrumbs to display."
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:77
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:77
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:77
 msgid "Single Entries"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:81
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:81
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:81
 msgid "Pages"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:85
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:85
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:85
 msgid "Blog Page"
 msgstr ""
@@ -183,7 +155,6 @@ msgstr ""
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:89
 #: assets/composer/justintadlock/hybrid-core/extensions/breadcrumb-trail.php:181
 #: assets/composer/justintadlock/hybrid-core/functions/template-general.php:339
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:89
 #: hybrid-core/extensions/breadcrumb-trail.php:181
 #: hybrid-core/functions/template-general.php:339
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:89
@@ -191,199 +162,165 @@ msgid "Archives"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:93
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:93
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:93
 msgid "404 Page"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/breadcrumb-display.php:97
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:97
 #: includes/vendor/flagship-library/customizer/classes/breadcrumb-display.php:97
 msgid "Attachment/Media Pages"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/customizer-base.php:78
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/customizer-base.php:78
 #: includes/vendor/flagship-library/customizer/classes/customizer-base.php:78
 msgid "When extending Flagship_Customizer_Base, you must create a register method."
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/site-logo.php:77
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/site-logo.php:77
 #: includes/vendor/flagship-library/customizer/classes/site-logo.php:77
 msgid "Site Title, Tagline, and Logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/site-logo.php:99
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/site-logo.php:99
 #: includes/vendor/flagship-library/customizer/classes/site-logo.php:99
 msgid "Display Header Text"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/site-logo.php:129
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/site-logo.php:129
 #: includes/vendor/flagship-library/customizer/classes/site-logo.php:129
 msgid "Logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/classes/site-logo.php:264
-#: assets/theme/includes/vendor/flagship-library/customizer/classes/site-logo.php:264
 #: includes/vendor/flagship-library/customizer/classes/site-logo.php:264
 msgid "Site Logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:32
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:32
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:32
 msgid "Add logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:33
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:33
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:33
 msgid "Set as logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:34
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:34
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:34
 msgid "Choose logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:35
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:35
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:35
 msgid "Change logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:36
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:36
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:36
 msgid "Remove logo"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/customizer/controls/site-logo.php:37
-#: assets/theme/includes/vendor/flagship-library/customizer/controls/site-logo.php:37
 #: includes/vendor/flagship-library/customizer/controls/site-logo.php:37
 msgid "No logo set"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/flagship-library.php:118
 #: assets/composer/flagshipwp/flagship-library/flagship-library.php:134
-#: assets/theme/includes/vendor/flagship-library/flagship-library.php:118
-#: assets/theme/includes/vendor/flagship-library/flagship-library.php:134
 #: includes/vendor/flagship-library/flagship-library.php:118
 #: includes/vendor/flagship-library/flagship-library.php:134
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-entry.php:130
-#: assets/theme/includes/vendor/flagship-library/functions/template-entry.php:130
 #: includes/vendor/flagship-library/functions/template-entry.php:130
 msgid "% Comments"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-entry.php:131
-#: assets/theme/includes/vendor/flagship-library/functions/template-entry.php:131
 #: includes/vendor/flagship-library/functions/template-entry.php:131
 msgid "1 Comment"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-entry.php:132
-#: assets/theme/includes/vendor/flagship-library/functions/template-entry.php:132
 #: includes/vendor/flagship-library/functions/template-entry.php:132
 msgid "Leave a Comment"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:237
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:237
 #: includes/vendor/flagship-library/functions/template-general.php:237
 msgid "Previous"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:238
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:238
 #: includes/vendor/flagship-library/functions/template-general.php:238
 msgid "Next"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:322
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:322
 #: includes/vendor/flagship-library/functions/template-general.php:322
 msgid "Previous Page"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:323
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:323
 #: includes/vendor/flagship-library/functions/template-general.php:323
 msgid "Next Page"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:324
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:324
 #: includes/vendor/flagship-library/functions/template-general.php:324
 msgid "Newer Posts"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:325
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:325
 #: includes/vendor/flagship-library/functions/template-general.php:325
 msgid "Older Posts"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:420
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:420
 #: includes/vendor/flagship-library/functions/template-general.php:420
 msgid "Purpose-Built WordPress Theme by"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/functions/template-general.php:447
-#: assets/theme/includes/vendor/flagship-library/functions/template-general.php:447
 #: includes/vendor/flagship-library/functions/template-general.php:447
 msgid "The Most Advanced WordPress Starter Theme Ever Created"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/admin/settings-author-box.php:13
-#: assets/theme/includes/vendor/flagship-library/templates/admin/settings-author-box.php:13
 #: includes/vendor/flagship-library/templates/admin/settings-author-box.php:13
 msgid "Author Box Settings"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/admin/settings-author-box.php:15
-#: assets/theme/includes/vendor/flagship-library/templates/admin/settings-author-box.php:15
 #: includes/vendor/flagship-library/templates/admin/settings-author-box.php:15
 msgid "Choose where you would like to display an author box."
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/admin/settings-author-box.php:23
-#: assets/theme/includes/vendor/flagship-library/templates/admin/settings-author-box.php:23
 #: includes/vendor/flagship-library/templates/admin/settings-author-box.php:23
 msgid "Enable Author Box on this User's Posts?"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/admin/settings-author-box.php:28
-#: assets/theme/includes/vendor/flagship-library/templates/admin/settings-author-box.php:28
 #: includes/vendor/flagship-library/templates/admin/settings-author-box.php:28
 msgid "Enable Author Box on this User's Archives?"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-archive.php:25
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-single.php:25
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-archive.php:25
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-single.php:25
 #: includes/vendor/flagship-library/templates/author-box-archive.php:25
 #: includes/vendor/flagship-library/templates/author-box-single.php:25
 msgid "Written by"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-single.php:41
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-single.php:41
 #: includes/vendor/flagship-library/templates/author-box-single.php:41
 msgid "Twitter"
 msgstr ""
 
 #: assets/composer/flagshipwp/flagship-library/templates/author-box-single.php:64
-#: assets/theme/includes/vendor/flagship-library/templates/author-box-single.php:64
 #: includes/vendor/flagship-library/templates/author-box-single.php:64
 msgid "RSS Feed"
 msgstr ""

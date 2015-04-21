@@ -167,6 +167,12 @@ module.exports = {
 					'!theme/**'
 				],
 				dest: '<%= paths.theme%>theme/<%= pkg.name %>'
+			},
+			{
+				expand: true,
+				cwd: '<%= paths.authorAssets %>',
+				src: '.gitmodules',
+				dest: '<%= paths.theme%>theme/<%= pkg.name %>'
 			}
 		]
 	},
