@@ -48,6 +48,36 @@ module.exports = {
 			},
 			{
 				expand: true,
+				cwd: '<%= paths.authorAssets %>',
+				src: ['*.php'],
+				dest: '<%= paths.theme%>'
+			},
+			{
+				expand: true,
+				cwd: '<%= paths.authorAssets %>comment',
+				src: ['**/*'],
+				dest: 'comment'
+			},
+			{
+				expand: true,
+				cwd: '<%= paths.authorAssets %>content',
+				src: ['**/*'],
+				dest: 'content'
+			},
+			{
+				expand: true,
+				cwd: '<%= paths.authorAssets %>menu',
+				src: ['**/*'],
+				dest: 'menu'
+			},
+			{
+				expand: true,
+				cwd: '<%= paths.authorAssets %>sidebar',
+				src: ['**/*'],
+				dest: 'sidebar'
+			},
+			{
+				expand: true,
 				cwd: '<%= paths.composer %>justintadlock/hybrid-core',
 				src: ['**/*'],
 				dest: '<%= paths.hybridCore %>'
