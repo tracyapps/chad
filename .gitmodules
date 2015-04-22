@@ -1,3 +1,7 @@
 [submodule "theme/chad"]
     path = theme/chad
-    url = git://github.com/tracyapps/chad.git/
+    url = git://github.com/tracyapps/chad.git
+
+[submodule "assets/composer/justintadlock/hybrid-core"]
+	path = assets/composer/justintadlock/hybrid-core
+	url = git://github.com/tracyapps/chad.git
