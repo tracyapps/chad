@@ -172,7 +172,7 @@ module.exports = {
 				expand: true,
 				cwd: '<%= paths.authorAssets %>',
 				src: '.gitmodules',
-				dest: '<%= paths.theme%>theme/<%= pkg.name %>'
+				dest: '<%= paths.theme%>'
 			}
 		]
 	},
