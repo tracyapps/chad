@@ -78,6 +78,12 @@ module.exports = {
 			},
 			{
 				expand: true,
+				cwd: '<%= paths.authorAssets %>video',
+				src: ['**/*'],
+				dest: 'video'
+			},
+			{
+				expand: true,
 				cwd: '<%= paths.composer %>justintadlock/hybrid-core',
 				src: ['**/*'],
 				dest: '<%= paths.hybridCore %>'
