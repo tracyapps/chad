@@ -172,7 +172,7 @@ h5,
 h6 {
 	color: $base-heading-color;
 	font-family: $heading-font-family;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: $heading-line-height;
 	margin: 0 0 10px;
 	text-rendering: optimizeLegibility; // Fix the character spacing for headings
@@ -220,4 +220,10 @@ h5 {
 
 h6 {
 	font-size: $h6-font-size;
+}
+
+/* Inverse colors
+--------------------------------------------- */
+.inverse-bg {
+	@include inverse-text-color-styles;
 }

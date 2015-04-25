@@ -7,3 +7,46 @@ $form-border-radius: $base-border-radius;
 //------------------------------------------------------------------------------
 $form-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+
+@mixin inverse-text-color-styles {
+	color: $inverse-font-color;
+	p {
+		color: $inverse-font-color;
+	}
+	blockquote {
+		color: $inverse-blockquote-color;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	pre {
+		color: $inverse-heading-color;
+	}
+	a {
+		color: $inverse-link-color;
+		&:hover,
+		&:active,
+		&:focus {
+			color: $inverse-link-color-hover;
+		}
+	}
+
+	//now resetting the button link styles
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button {
+		@extend %button-base;
+		background-color: $base-button-background-color;
+		color: $base-button-font-color;
+		&:hover,
+		&:focus {
+			background-color: $base-button-background-color-hover;
+			color: $base-button-font-color-hover;
+		}
+	}
+}

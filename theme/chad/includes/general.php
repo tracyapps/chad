@@ -67,27 +67,29 @@ function chad_loop_home_section( $section_key ) {
 	$section_media = $section_key[ 'the_section_media' ];
 	?>
 	<section id='<?php esc_html_e( $section_data->post_name, 'chad' ); ?>' class='<?php echo esc_html( $section_key[ 'the_section_bg_color' ] ) . ' ' . esc_html( $section_layout ); ?> section' <?php if ( $deviceType == 'desktop' ) { echo ' data-type="background" data-speed="10" '; } ?>>
-		<div class="section-main">
-			<div <?php hybrid_attr( 'site-inner' ); ?>>
-				<h2 class="page-title"><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
-				<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
-				<?php
-				if ( $section_key[ 'the_section_button_label' ] != '' ) {
-					echo '<p><a href="' . esc_url( post_permalink( $section_id ) ) . '" class="button button-primary">' . esc_html( $section_key[ 'the_section_button_label' ] ) . '</a></p>';
-				} ?>
-			</div><!--#site-inner-->
-		</div><!--/.section-main-->
-		<?php if ( $section_layout != '1col' && $section_media != '' ) : ?>
-			<aside class="section-aside">
-				<?php echo '<a href="' . esc_url( post_permalink( $section_id ) ) . '">' . wp_get_attachment_image( $section_media, 'large' ) . '</a>'; ?>
-				<?php
+		<div class="wrap">
+			<div class="section-main">
+				<div <?php hybrid_attr( 'site-inner' ); ?>>
+					<h2 class="page-title"><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
+					<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
+					<?php
+					if ( $section_key[ 'the_section_button_label' ] != '' ) {
+						echo '<p><a href="' . esc_url( post_permalink( $section_id ) ) . '" class="button button-primary">' . esc_html( $section_key[ 'the_section_button_label' ] ) . '</a></p>';
+					} ?>
+				</div><!--#site-inner-->
+			</div><!--/.section-main-->
+			<?php if ( $section_layout != '1col' && $section_media != '' ) : ?>
+				<aside class="section-aside">
+					<?php echo '<a href="' . esc_url( post_permalink( $section_id ) ) . '">' . wp_get_attachment_image( $section_media, 'large' ) . '</a>'; ?>
+					<?php
 					$media_post = get_post( $section_media );
 					$media_caption = $media_post->post_excerpt;
 					if ( $media_caption != '' ) {
 						echo '<div class="caption">' . esc_html( $media_caption ) . '</div>';
 					}; ?>
-			</aside>
-		<?php endif; ?>
+				</aside>
+			<?php endif; ?>
+		</div>
 	</section>
 <?php
 }

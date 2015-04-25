@@ -16,7 +16,6 @@
 	}
 }
 
-.site-inner,
 .wrap {
 	margin-left: auto;
 	margin-right: auto;
@@ -25,8 +24,7 @@
 	padding-right: 5%;
 
 	@include media($small-screen-up) {
-		padding-left: 0;
-		padding-right: 0;
+
 	}
 
 	@include media($medium-screen-up) {
@@ -36,6 +34,13 @@
 	@include media($large-screen-up) {
 		max-width: $wrap-max-width-large;
 	}
+}
+
+.site-inner {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
 }
 
 /* Column Widths and Positions

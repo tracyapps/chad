@@ -1,3 +1,28 @@
+/* global styles
+--------------------------------------------- */
+
+//section background colors
+.orange {
+	background: $orange;
+}
+.dark-grey {
+	background: $dark-gray;
+	@include inverse-text-color-styles;
+}
+.green {
+	background: $green;
+}
+.light-blue {
+	background: $light-blue;
+}
+.purple {
+	background: $purple;
+	@include inverse-text-color-styles;
+}
+.off-white {
+	background: $medium-fog;
+}
+
 /* Hybrid Core
 --------------------------------------------- */
 
@@ -22,6 +47,7 @@
 	font-size: $loop-title-size;
 	font-weight: 600;
 }
+
 
 /* Search Form
 --------------------------------------------- */

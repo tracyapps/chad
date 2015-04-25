@@ -1,14 +1,14 @@
 %button-base {
-	border: 0;
 	border-radius: $base-border-radius;
 	cursor: pointer;
 	display: inline-block;
 	font-size: $base-button-font-size;
 	font-weight: 400;
-	padding: 16px 24px;
+	padding: 0.5em 24px;
 	text-align: center;
 	text-transform: uppercase;
 	width: auto;
+	border: 1px solid darken($base-button-background-color, 10);
 }
 
 %cta-button-style {

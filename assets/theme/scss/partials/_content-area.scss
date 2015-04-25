@@ -1,3 +1,125 @@
+/* front-page
+--------------------------------------------- */
+#home {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: $dark-gray;
+	margin-bottom: 2em;
+
+	#video-frame {
+		width: 100%;
+		display: flex;
+		position: relative;
+		overflow: hidden;
+	}
+	#video-overlay {
+		z-index: 100;
+		width: 50%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		padding-bottom: 30px;
+		background: $transparent-dark;
+		color: $white;
+		flex-grow: 1;
+	}
+	video {
+		width: 100% !important;
+		min-width: 100% !important;
+		height: auto !important;
+		object-fit: cover;
+		opacity: 0.9;
+	}
+	#video-bg {
+		width: 100%;
+		min-width: 100%;
+		height: auto;
+		background: $dark-gray;
+	}
+
+	&.video-placeholder {
+		background-image: url( 'images/video-placeholder.jpg' );
+		background-size: cover;
+		background-position: 19% center;
+
+		#video-frame {
+			display: block;
+		}
+		#video-overlay {
+			position: relative;
+			float: right;
+			display: block;
+			width: 70%;
+			flex-grow: 0;
+			padding: 20px 10px;
+		}
+
+	}
+}
+
+.section {
+	position: relative;
+	padding: 5em 0;
+	.wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		.section-aside {
+			@include span-columns(4);
+			padding: 1em;
+		}
+		.section-main {
+			@include span-columns(8);
+			padding: 1em;
+		}
+	}
+
+	// default layout order
+	.section-main {
+		order: 1;
+		padding-left: 0;
+	}
+	.section-aside {
+		order: 2;
+		padding-right: 0;
+	}
+
+	//layout overrides: 2 col, with large aside (about page)
+	&.l-2col-large-aside {
+		min-height: 820px;
+		.section-main {
+			padding: 2em 7em 10em 0;
+		}
+		.section-aside {
+			img {
+				position: absolute;
+				max-width: none;
+				top: -180px;
+				right: -80px;
+				z-index: 150;
+			}
+		}
+	}
+
+	//layout overrides: 2 col, aside - main
+	&.l-2col-aside-main {
+		.section-main {
+			order: 2;
+			padding-right: 0;
+			@include span-columns(4);
+		}
+		.section-aside {
+			order: 1;
+			padding-left: 0;
+			@include span-columns(8);
+		}
+	}
+}
+
 /* Entries
 --------------------------------------------- */
 
@@ -6,7 +128,7 @@
 	padding: 0;
 	position: relative;
 
-	@include media($small-screen-up) {
+	@include media( $small-screen-up ) {
 		padding: $article-padding;
 	}
 }
@@ -15,7 +137,7 @@
 	background-color: $entry-background-color;
 	border-bottom: 1px solid $entry-border-color;
 
-	@include media($small-screen-up) {
+	@include media( $small-screen-up ) {
 		border: 1px solid $entry-border-color;
 	}
 }
@@ -41,7 +163,7 @@
 	top: -1px;
 
 	.ribbon-content {
-		@include transform(rotate(45deg));
+		@include transform( rotate( 45deg ) );
 		background-color: $corner-ribbon-background-color;
 		color: $corner-ribbon-font-color;
 		font-size: $small-font-size;
@@ -57,7 +179,7 @@
 }
 
 .rtl .ribbon-content {
-	@include transform(rotate(-45deg));
+	@include transform( rotate( -45deg ) );
 }
 
 .entry-content {
@@ -67,7 +189,7 @@
 	> dl {
 		margin-bottom: $content-margin-small;
 
-		@include media($small-screen-up) {
+		@include media( $small-screen-up ) {
 			margin-bottom: $content-margin;
 		}
 	}
@@ -76,7 +198,7 @@
 	ul {
 		margin-left: 20px;
 
-		@include media($small-screen-up) {
+		@include media( $small-screen-up ) {
 			margin-left: $base-padding;
 		}
 	}
@@ -194,7 +316,7 @@
 .entry-header .entry-meta {
 	margin-bottom: $content-margin-small;
 
-	@include media($small-screen-up) {
+	@include media( $small-screen-up ) {
 		margin-bottom: $content-margin;
 	}
 }

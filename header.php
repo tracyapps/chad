@@ -52,7 +52,6 @@
 			<?php tha_header_bottom(); ?>
 
 		</div>
-
 	</header>
 	<!-- #header -->
 

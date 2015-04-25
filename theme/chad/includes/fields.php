@@ -78,7 +78,7 @@ if ( class_exists( 'Fieldmanager_Field' ) ) :
 							'the_section_bg_color' => new Fieldmanager_Radios( 'current_section_bg_color', array(
 										'default_value'	=> 'white',
 										'options'		=> array(
-											'white', 'orange', 'dark-grey', 'green', 'light-blue', 'grey-blue', 'purple', 'off-white'
+											'white', 'orange', 'dark-grey', 'green', 'light-blue', 'purple', 'off-white'
 										),
 									)
 								),
@@ -88,17 +88,17 @@ if ( class_exists( 'Fieldmanager_Field' ) ) :
 							'the_section_layout' => new Fieldmanager_Radios( false, array(
 									'default_value' => '2col-main-aside',
 									'options' 		=> array(
-										'2col-main-aside' 	=> '2 Columns: content / aside (media)',
-										'2col-aside-main' 	=> '2 Columns: aside (media) / content',
-										'1col' 				=> '1 Column: just content (no media)',
+										'l-2col-main-aside' 	=> '2 Columns: content / aside (media)',
+										'l-2col-aside-main' 	=> '2 Columns: aside (media) / content',
+										'l-1col' 				=> '1 Column: just content (no media)',
+										'l-2col-large-aside' 	=> '2 Columns with big image on right side (typically the about section)',
 									)
 								)
 
-								),
+							),
 						),
 					)
 				);
-
 				$fm->add_meta_box( 'Homepage Sections', 'page' );
 
 			}
