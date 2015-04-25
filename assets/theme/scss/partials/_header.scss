@@ -1,33 +1,77 @@
 .site-header {
 	background-color: $header-background-color;
-	border-bottom: 1px solid $header-border-color;
 	color: $header-font-color;
-	padding: 10px 0;
+	padding: 0 0 2em 0;
+	-webkit-transition: all 1.2s;
+	-moz-transition: all 1.2s;
+	-ms-transition: all 1.2s;
+	-o-transition: all 1.2s;
+	transition: all 1.2s;
+	height: $site-header-starting-height;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index:999;
+	width: 100%;
+	&:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	.header-wrap {
 
-	@include media($small-screen-up) {
-		padding: 15px 0;
 	}
 
-	@include media($medium-screen-up) {
-		padding: 25px 0;
+
+	#branding {
+		display: block;
+		max-width: 95%;
+		max-height: 410px;
+		-webkit-transition: all 1.2s;
+		-moz-transition: all 1.2s;
+		-ms-transition: all 1.2s;
+		-o-transition: all 1.2s;
+		transition: all 1.2s;
+		svg {
+			width: auto;
+			max-width: 80%;
+			max-height: 100%;
+		}
 	}
+
+	&.smaller {
+		height: 170px;
+		background-color: transparentize( $light-fog, 0.1 );
+		.header-wrap {
+
+		}
+		#branding {
+			max-width: 40%;
+			max-height: 117px;
+			svg {
+				max-height: 90%;
+				width: auto;
+			}
+		}
+	}
+
 }
 
 /* Title Area
 --------------------------------------------- */
 
 .site-branding {
-	display: inline-block;
+	display: block;
 	float: none;
-	margin-right: 0;
+	margin: 0 auto;
 	width: auto;
-
-	@include media($medium-screen-up) {
-		@include span-columns(3);
-	}
+	text-align: center;
 }
 
 .site-title {
+	display: none;
 	font-family: $header-font-family;
 	font-size: $site-title-font-size;
 	font-weight: 600;
@@ -42,6 +86,7 @@
 }
 
 .site-description {
+	display: none;
 	color: $header-font-color;
 	font-family: $header-font-family;
 	font-size: $site-description-font-size;
@@ -58,11 +103,5 @@
 --------------------------------------------- */
 
 .header-right {
-	@include span-columns(9);
-	float: right;
-	text-align: right;
-
-	.widget {
-		margin: 0;
-	}
+	display: none;
 }

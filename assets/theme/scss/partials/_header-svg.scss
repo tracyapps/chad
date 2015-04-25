@@ -1,0 +1,122 @@
+
+.style0 {
+	fill-rule:	evenodd;
+	clip-rule:	evenodd;
+	fill:	#FDBE48;
+}
+.style1 {
+	stroke-linejoin:	round;
+	stroke:	#000000;
+	stroke-width:	0.3926;
+	stroke-miterlimit:	10;
+	fill:	none;
+}
+
+.style2 {
+	fill-rule:	evenodd;
+	clip-rule:	evenodd;
+	fill:	#F6921E;
+}
+.style3 {
+	stroke-linejoin:	round;
+	stroke:	#1E1E1E;
+	stroke-width:	0.3926px;
+	stroke-miterlimit:	10;
+	fill:	none;
+}
+.style4 {
+	font-size:	102.7113px;
+	font-family: 'Cabin';
+	font-weight: 600;
+	fill:	#231F20;
+}
+.style5 {
+	font-size:	102.7113px;
+	font-family: 'Cabin';
+	font-weight: 600;
+	letter-spacing:	5;
+	fill:	#231F20;
+}
+.style6 {
+	font-size:	102.7113px;
+	font-family: 'Cabin';
+	font-weight: 600;
+	letter-spacing:	-2;
+	fill:	#231F20;
+}
+.style7 {
+	font-size:	102.7113px;
+	font-family: 'Cabin';
+	font-weight: 600;
+	letter-spacing:	-1;
+	fill:	#231F20;
+}
+.style8 {
+	stroke:	#3A53A3;
+	stroke-width:	2;
+	stroke-miterlimit:	10;
+	fill:	none;
+}
+.style9 {
+	stroke-miterlimit:	10;
+	stroke:	#3A53A3;
+	stroke-width:	2;
+	stroke-dasharray:	12.043;
+	fill:	none;
+}
+.style10 {
+	stroke-miterlimit:	10;
+	stroke:	#3A53A3;
+	stroke-width:	2;
+	stroke-dasharray:	12.1482;
+	fill:	none;
+}
+.style11 {
+	fill:	#231F20;
+}
+.style12 {
+	fill:	#FFFFFF;
+}
+.style13 {
+	font-size:	48px;
+	font-family:	'Orbitron';
+	font-weight: 400;
+	fill:	#231F20;
+}
+.style14 {
+	font-size:	58.7312px;
+	font-family:	'Cabin Sketch';
+	fill:	#231F20;
+}
+
+//animate the body
+#rocket_body {
+	.style2 {
+		fill: #fc9100;
+		@include animation( backgroundColorBody 40s linear infinite );
+	}
+	@include keyframes( backgroundColorBody ) {
+		0% {fill: #fc9100;}
+		20% {fill: #fc6500;}
+		40% {fill: #51aef0;}
+		60% {fill: #2bfbea;}
+		80% {fill: #e9eb59;}
+		100% {fill: #fc9100;}
+	}
+}
+//animate the wings
+#wings-back,
+#wings-front {
+	.style0 {
+		fill: #ffbe12;
+		@include animation( backgroundColorWings 50s linear infinite );
+	}
+	@include keyframes( backgroundColorWings ) {
+		0% {fill: #ffbe12;}
+		20% {fill: #12fff1;}
+		40% {fill: #76d83b;}
+		60% {fill: #ff8d12;}
+		80% {fill: #d8683b;}
+		100% {fill: #ffbe12;}
+	}
+}

@@ -69,14 +69,12 @@ function chad_loop_home_section( $section_key ) {
 	<section id='<?php esc_html_e( $section_data->post_name, 'chad' ); ?>' class='<?php echo esc_html( $section_key[ 'the_section_bg_color' ] ) . ' ' . esc_html( $section_layout ); ?> section' <?php if ( $deviceType == 'desktop' ) { echo ' data-type="background" data-speed="10" '; } ?>>
 		<div class="wrap">
 			<div class="section-main">
-				<div <?php hybrid_attr( 'site-inner' ); ?>>
-					<h2 class="page-title"><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
-					<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
-					<?php
-					if ( $section_key[ 'the_section_button_label' ] != '' ) {
-						echo '<p><a href="' . esc_url( post_permalink( $section_id ) ) . '" class="button button-primary">' . esc_html( $section_key[ 'the_section_button_label' ] ) . '</a></p>';
-					} ?>
-				</div><!--#site-inner-->
+				<h2 class="page-title"><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
+				<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
+				<?php
+				if ( $section_key[ 'the_section_button_label' ] != '' ) {
+					echo '<p><a href="' . esc_url( post_permalink( $section_id ) ) . '" class="button button-primary">' . esc_html( $section_key[ 'the_section_button_label' ] ) . '</a></p>';
+				} ?>
 			</div><!--/.section-main-->
 			<?php if ( $section_layout != '1col' && $section_media != '' ) : ?>
 				<aside class="section-aside">
@@ -101,8 +99,7 @@ add_action ( 'tha_entry_top', 'chad_do_sticky_banner' );
  * @since   1.0.0
  * @return  void
  */
-function chad_do_sticky_banner ()
-{
+function chad_do_sticky_banner() {
 	if ( is_singular () || !is_sticky () ) {
 		return;
 	}
@@ -112,3 +109,12 @@ function chad_do_sticky_banner ()
 	</div>
 <?php
 }
+
+
+/**
+ * Displaying the SVG logo... and animatin' it.
+ */
+
+function chad_svg_logo() {
+	echo get_template_part( 'includes/CL-logo-forweb-compressed.svg' );
+ }

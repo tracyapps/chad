@@ -72,7 +72,7 @@ b, strong {
 
 hr {
   border: 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #f5f5f5;
   margin: 20px 0; }
 
 pre {
@@ -97,7 +97,7 @@ address {
   margin: 0 0 26px; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #e0e0e0;
+  border-bottom: 1px dotted #f5f5f5;
   cursor: help; }
 
 mark, ins {
@@ -373,7 +373,7 @@ a:hover img, a:focus img {
 --------------------------------------------- */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea, select, textarea {
   background-color: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f5f5f5;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   color: #36332d;
@@ -383,30 +383,30 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
   width: 100%; }
 
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover, textarea:hover {
-  border-color: lightgray; }
+  border-color: #e8e8e8; }
 
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus, textarea:focus {
-  border-color: #adadad;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(160, 160, 160, 0.7);
+  border-color: #c2c2c2;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(181, 181, 181, 0.7);
   outline: none; }
 
 input[type="checkbox"], input[type="image"], input[type="radio"] {
   width: auto; }
 
 input::-webkit-input-placeholder {
-  color: #c7c7c7;
+  color: gainsboro;
   opacity: 1;
   font-weight: 400; }
 input::-moz-placeholder {
-  color: #c7c7c7;
+  color: gainsboro;
   opacity: 1;
   font-weight: 400; }
 input:-moz-placeholder {
-  color: #c7c7c7;
+  color: gainsboro;
   opacity: 1;
   font-weight: 400; }
 input:-ms-input-placeholder {
-  color: #c7c7c7;
+  color: gainsboro;
   opacity: 1;
   font-weight: 400; }
 
@@ -420,10 +420,10 @@ table {
   width: 100%; }
 
 tbody {
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #f5f5f5; }
 
 td, th {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #f5f5f5;
   padding: 10px 0;
   text-align: left; }
 
@@ -545,6 +545,24 @@ Common Classes
 
 .off-white {
   background: #e0e0e0; }
+
+/* elevator :)
+--------------------------------------------- */
+.elevator {
+  text-align: center;
+  cursor: pointer;
+  width: 140px;
+  margin: auto; }
+
+.elevator:hover {
+  opacity: 0.7; }
+
+.elevator svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px; }
 
 /* Hybrid Core
 --------------------------------------------- */
@@ -679,7 +697,7 @@ Flagship Styles
 --------------------------------------------- */
 .author-box {
   background: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f5f5f5;
   margin-bottom: 30px;
   padding: 20px 20px 4px;
   text-align: center; }
@@ -868,15 +886,15 @@ blockquote {
 
 .mce-item-table, table {
   border-collapse: separate;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #f5f5f5;
   border-left: 0;
   margin: 20px 0;
   width: 100%; }
 
 .mce-item-table td, .mce-item-table th, .mce-item-table caption, table th, table td {
   border: 0;
-  border-left: 1px solid #e0e0e0;
-  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
   font-size: 18px;
   line-height: 1.2;
   padding: 10px;

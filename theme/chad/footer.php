@@ -19,6 +19,8 @@
 
 	<div <?php hybrid_attr( 'wrap', 'footer' ); ?>>
 
+		<?php hybrid_get_menu( 'secondary' ); ?>
+
 		<p class="credit">
 			<?php
 			printf(

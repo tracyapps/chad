@@ -41,20 +41,17 @@
 			<?php tha_header_top(); ?>
 
 			<div <?php hybrid_attr( 'branding' ); ?>>
-				<?php flagship_the_logo(); ?>
+				<?php chad_svg_logo(); ?>
 				<?php hybrid_site_title(); ?>
 				<?php hybrid_site_description(); ?>
 			</div>
 			<!-- #branding -->
-
-			<?php hybrid_get_menu( 'primary' ); ?>
-
 			<?php tha_header_bottom(); ?>
-
 		</div>
+		<?php hybrid_get_menu( 'primary' ); ?>
 	</header>
 	<!-- #header -->
 
 	<?php tha_header_after(); ?>
 
-	<?php hybrid_get_menu( 'secondary' ); ?>
+

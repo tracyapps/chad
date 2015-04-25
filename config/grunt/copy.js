@@ -245,15 +245,15 @@ module.exports = {
 		options: {
 
 			// CSS filenames
-			datasvgcss: "icons.data.svg.css",
-			datapngcss: "icons.data.png.css",
-			urlpngcss: "icons.fallback.css",
+			datasvgcss: 'icons.data.svg.css',
+			datapngcss: 'icons.data.png.css',
+			urlpngcss: 'icons.fallback.css',
 
 			// preview HTML filename
-			previewhtml: "preview.html",
+			previewhtml: 'preview.html',
 
 			// grunticon loader code snippet filename
-			loadersnippet: "grunticon.loader.js",
+			loadersnippet: 'grunticon.loader.js',
 
 			// Include loader code for SVG markup embedding
 			enhanceSVG: true,
@@ -262,27 +262,27 @@ module.exports = {
 			corsEmbed: false,
 
 			// folder name (within dest) for png output
-			pngfolder: "png",
+			pngfolder: 'png',
 
 			// prefix for CSS classnames
-			cssprefix: ".icon-",
+			cssprefix: '.icon-',
 
-			defaultWidth: "300px",
-			defaultHeight: "200px",
+			defaultWidth: '300px',
+			defaultHeight: '200px',
 
 			// define vars that can be used in filenames if desirable, like foo.colors-primary-secondary.svg
 			colors: {
-				primary: "red",
-				secondary: "#666"
+				primary: 'red',
+				secondary: '#666'
 			},
 
 			dynamicColorOnly: true,
 
 			// css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
 			// This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
-			cssbasepath: "/",
-			template: "example/default-css.hbs",
-			previewTemplate: "example/preview-custom.hbs",
+			cssbasepath: '/',
+			template: 'example/default-css.hbs',
+			previewTemplate: 'example/preview-custom.hbs',
 			compressPNG: true
 
 		}

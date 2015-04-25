@@ -31,7 +31,7 @@ $transparent-dark: rgba( 0, 0, 0, 0.4 );
 //------------------------------------------------------------------------------
 $base-background-color: $white;
 $base-font-color: $dark-gray;
-$base-border-color: $medium-fog;
+$base-border-color: $light-fog;
 $base-accent-color: $light-gray;
 $base-heading-color: $off-black;
 $base-heading-color-hover: $green;
@@ -87,19 +87,19 @@ $header-link-color: $off-black;
 
 // Navigation Colors
 //------------------------------------------------------------------------------
-$nav-background-color: $white;
+$nav-background-color: transparentize( $base-background-color, 0.1 );
 $nav-border-color: $base-border-color;
-$nav-link-color: $dark-gray;
-$nav-link-color-hover: $base-link-color;
+$nav-link-color: $base-link-color;
+$nav-link-color-hover: $base-link-color-hover;
 
 $menu-header-border-color: $base-border-color;
-$menu-header-color: $light-gray;
-$menu-header-color-hover: $base-link-color;
+$menu-header-color: $base-link-color;
+$menu-header-color-hover: $base-link-color-hover;
 
 $menu-primary-background-color: $nav-background-color;
 $menu-primary-border-color: $base-border-color;
-$menu-primary-link-color: lighten($nav-link-color, 10);
-$menu-primary-link-color-hover: $base-link-color;
+$menu-primary-link-color: $base-link-color;
+$menu-primary-link-color-hover: $base-link-color-hover;
 
 $menu-secondary-background-color: $nav-background-color;
 $menu-secondary-border-color: $base-border-color;

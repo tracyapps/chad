@@ -85,9 +85,18 @@ function chad_enqueue_scripts ()
 
 	wp_enqueue_script (
 		'chad',
-		$js_dir . "theme{$suffix}.js",
+		$js_dir . "theme.js",
 		array ( 'jquery' ),
 		null,
 		true
+	);
+	$site_parameters = array(
+		'site_url' => get_site_url(),
+		'theme_directory' => get_template_directory_uri()
+	);
+	wp_localize_script(
+		'chad',
+		'the_base_theme_directory',
+		$site_parameters
 	);
 }

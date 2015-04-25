@@ -31,4 +31,25 @@ window.chad = window.chad || {};
 		skipLinkFocus.init();
 		chad.globalInit();
 	} );
+
+	$(function() {
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+
+			if (scroll >= 100) {
+				$('header').addClass('smaller');
+			} else {
+				$('header').removeClass('smaller');
+			}
+		});
+	});
 })( this, jQuery );
+
+// Simple elevator usage.
+var elementButton = document.querySelector('.elevator');
+var Elevator;
+new Elevator({
+	element: elementButton,
+	mainAudio: the_base_theme_directory.theme_directory + '/includes/sounds/elevator-music.mp3', // Music from http://www.bensound.com/
+	endAudio: the_base_theme_directory.theme_directory + '/includes/sounds/ding.mp3' // Music from http://www.bensound.com/
+});
