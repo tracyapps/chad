@@ -2511,18 +2511,22 @@ Content Area
 }
 
 .section.l-2col-large-aside {
-	min-height: 820px;
+	min-height: 760px;
 }
 
 .section.l-2col-large-aside .section-main {
-	padding: 2em 0 10em 7em;
+	padding: 1em 0 6em 7em;
+}
+
+.section.l-2col-large-aside .section-aside {
+	position: relative;
 }
 
 .section.l-2col-large-aside .section-aside img {
 	max-width: none;
 	position: absolute;
-	top: -180px;
-	left: -80px;
+	top: -250px;
+	left: -130px;
 	z-index: 150;
 }
 

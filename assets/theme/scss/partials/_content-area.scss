@@ -90,16 +90,17 @@
 
 	//layout overrides: 2 col, with large aside (about page)
 	&.l-2col-large-aside {
-		min-height: 820px;
+		min-height: 760px;
 		.section-main {
-			padding: 2em 7em 10em 0;
+			padding: 1em 7em 6em 0;
 		}
 		.section-aside {
+			position: relative;
 			img {
 				position: absolute;
 				max-width: none;
-				top: -180px;
-				right: -80px;
+				top: -250px;
+				right: -130px;
 				z-index: 150;
 			}
 		}
