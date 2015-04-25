@@ -1,4 +1,4 @@
-
+@import "../bourbon/bourbon";
 .style0 {
 	fill-rule:	evenodd;
 	clip-rule:	evenodd;
@@ -93,7 +93,16 @@
 #rocket_body {
 	.style2 {
 		fill: #fc9100;
+		-webkit-animation: backgroundColorBody 40s linear infinite;
 		@include animation( backgroundColorBody 40s linear infinite );
+	}
+	@-webkit-keyframes backgroundColorBody {
+		0% {fill: #fc9100;}
+		20% {fill: #fc6500;}
+		40% {fill: #51aef0;}
+		60% {fill: #2bfbea;}
+		80% {fill: #e9eb59;}
+		100% {fill: #fc9100;}
 	}
 	@include keyframes( backgroundColorBody ) {
 		0% {fill: #fc9100;}
@@ -109,7 +118,16 @@
 #wings-front {
 	.style0 {
 		fill: #ffbe12;
+		-webkit-animation: backgroundColorWings 50s linear infinite;
 		@include animation( backgroundColorWings 50s linear infinite );
+	}
+	@-webkit-keyframes backgroundColorWings {
+		0% {fill: #ffbe12;}
+		20% {fill: #12fff1;}
+		40% {fill: #76d83b;}
+		60% {fill: #ff8d12;}
+		80% {fill: #d8683b;}
+		100% {fill: #ffbe12;}
 	}
 	@include keyframes( backgroundColorWings ) {
 		0% {fill: #ffbe12;}
