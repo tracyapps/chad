@@ -99,78 +99,6 @@
 	}
 }
 
-/* Primary Navigation
----------------------------------------------
-
-.site-header .menu-primary {
-	@include media($medium-screen-up) {
-		@include span-columns(9);
-		float: right;
-		text-align: right;
-	}
-
-	li > a {
-		padding-top: 23px;
-		padding-bottom: 23px;
-	}
-
-	.sub-menu {
-		border-top: 1px solid $menu-header-border-color;
-
-		.sub-menu {
-			margin-top: -60px;
-		}
-	}
-}
-
-.menu-primary {
-	display: none;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-}
-
-.no-menu {
-	display: none;
-	margin: 0;
-	padding: 2px 0;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-
-	.button {
-		padding: 8px 20px;
-		margin: 8px 0 8px 20px;
-	}
-}
-*/
-/* Secondary Navigation
----------------------------------------------
-
-.menu-secondary {
-	background-color: $menu-secondary-background-color;
-	border-bottom: 1px solid $menu-secondary-border-color;
-	display: none;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-
-	li > a {
-		color: $menu-secondary-link-color;
-	}
-
-	li > a:hover,
-	li > a:focus,
-	.current-menu-item > a,
-	.sub-menu .current-menu-item > a:hover,
-	.sub-menu .current-menu-item > a:focus {
-		color: $menu-secondary-link-color-hover;
-	}
-}*/
-
 .menu-primary {
 	background-color: $menu-primary-background-color;
 	border-bottom: 1px solid $menu-primary-border-color;
@@ -179,7 +107,7 @@
 
 	@include media($medium-screen-up) {
 		display: block;
-		opacity: 0;
+		opacity: 0.5;
 		-webkit-transition: all 1.2s;
 		-moz-transition: all 1.2s;
 		-ms-transition: all 1.2s;
@@ -208,6 +136,23 @@
 		}
 	}
 }
+@include media($medium-screen-up) {
+	.home .site-header {
+		.menu-primary {
+			opacity: 0;
+			-webkit-transition: all 1.2s;
+			-moz-transition: all 1.2s;
+			-ms-transition: all 1.2s;
+			-o-transition: all 1.2s;
+			transition: all 1.2s;
+		}
+
+		&.smaller .menu-primary {
+			opacity: 1;
+		}
+	}
+}
+
 
 /* Responsive Menu
 --------------------------------------------- */

@@ -7,7 +7,7 @@
 	-ms-transition: all 1.2s;
 	-o-transition: all 1.2s;
 	transition: all 1.2s;
-	height: $site-header-starting-height;
+	height: $site-header-starting-height-mobile;
 	position:fixed;
 	top: 0;
 	left: 0;
@@ -20,10 +20,10 @@
 		clear: both;
 		height: 0;
 	}
-	.header-wrap {
 
+	@include media( $small-screen-up ) {
+		height: $site-header-starting-height-desktop;
 	}
-
 
 	#branding {
 		display: block;
@@ -36,25 +36,43 @@
 		transition: all 1.2s;
 		svg {
 			width: auto;
-			max-width: 80%;
+			max-width: 100%;
 			max-height: 100%;
+			-moz-font-feature-settings:"liga=1, dlig=1";
+			-moz-font-feature-settings:"liga", "dlig"; /* EDIT: new syntax for FF 15+ */
+			-ms-font-feature-settings:"liga", "dlig";
+			-o-font-feature-settings:"liga", "dlig";
+			-webkit-font-feature-settings:"liga", "dlig";
+			font-feature-settings:"liga", "dlig";
+			text-rendering: optimizeLegibility;
+			@include media( $small-screen-up ) {
+				max-width: 80%;
+			}
 		}
 	}
 
 	&.smaller {
-		height: 170px;
+		height: 90px;
 		background-color: transparentize( $light-fog, 0.1 );
-		.header-wrap {
 
+		@include media( $small-screen-up ) {
+			height: 170px;
 		}
+
 		#branding {
-			max-width: 40%;
-			max-height: 117px;
-			svg {
-				max-height: 90%;
-				width: auto;
+			max-height: 70px;
+			max-width: 30%;
+
+			@include media( $small-screen-up ) {
+				max-width: 40%;
+				max-height: 117px;
+				svg {
+					max-height: 90%;
+					width: auto;
+				}
 			}
 		}
+
 	}
 
 }
@@ -70,32 +88,9 @@
 	text-align: center;
 }
 
-.site-title {
-	display: none;
-	font-family: $header-font-family;
-	font-size: $site-title-font-size;
-	font-weight: 600;
-	line-height: 1.2;
-	text-rendering: optimizeLegibility;
-
-	a,
-	a:hover,
-	a:focus {
-		color: $header-link-color;
-	}
-}
-
-.site-description {
-	display: none;
-	color: $header-font-color;
-	font-family: $header-font-family;
-	font-size: $site-description-font-size;
-	font-weight: 400;
-	line-height: 1.5;
-}
-
 .site-description,
 .site-title {
+	display: none;
 	margin-bottom: 0;
 }
 

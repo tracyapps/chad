@@ -73,6 +73,7 @@
 	-------------------- */
 	.sidebar {
 		@include span-columns(4);
+		padding-top: 80px;
 	}
 
 	.layout-2c-l .sidebar {

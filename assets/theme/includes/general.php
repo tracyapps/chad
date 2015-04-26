@@ -9,6 +9,15 @@
  * @since       1.0.0
  */
 
+/**
+ * first things first, lets get a global device check going
+ */
+
+require_once get_template_directory() . '/includes/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
+
+
 add_action ( 'init', 'chad_register_image_sizes', 5 );
 /**
  * Register custom image sizes for the theme.
@@ -24,6 +33,7 @@ function chad_register_image_sizes ()
 
 	// Add the 'chad-full' image size.
 	add_image_size ( 'chad-full', 1025, 500, true );
+	add_image_size( 'page-featured-image', 2000, 1700, true );
 }
 
 add_filter ( 'excerpt_length', 'chad_excerpt_length' );
@@ -50,6 +60,7 @@ function chad_get_meta( $meta_key ) {
 	return get_post_meta( get_the_ID(), $meta_key, true );
 }
 
+
 /**
  * function to loop through homepage section content.
  * @param $section_key
@@ -57,10 +68,7 @@ function chad_get_meta( $meta_key ) {
  */
 
 function chad_loop_home_section( $section_key ) {
-	require_once get_template_directory() . '/includes/Mobile_Detect.php';
-	$detect = new Mobile_Detect;
-	$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'desktop');
-
+	global $deviceType;
 	$section_id = $section_key[ 'the_section_page' ];
 	$section_data = get_post( $section_id );
 	$section_layout = $section_key[ 'the_section_layout' ];
@@ -118,3 +126,25 @@ function chad_do_sticky_banner() {
 function chad_svg_logo() {
 	echo get_template_part( 'includes/CL-logo-forweb-compressed.svg' );
  }
+
+/**
+ * displays featured image on page
+ */
+
+add_action( 'tha_content_before', 'chad_featured_image_page_header' );
+function chad_featured_image_page_header() {
+	if( ! is_front_page() ) {
+		if( has_post_thumbnail( get_the_ID(), 'full' ) ) {
+			//had a featured image
+			$imageid = get_post_thumbnail_id( get_the_ID() );
+			$imgurl = wp_get_attachment_image_src( $imageid, 'page-featured-image', false );
+
+			echo '<div id="page-featured-image" class="parallax-window" data-parallax="scroll" data-position-y="100px" data-speed="0.2" data-image-src="' . esc_url( $imgurl[0], 'chad' ) . '">';
+			//the_post_thumbnail( 'page-featured-image', array( 'data-speed' => '0.3', 'class' => 'parallax-slider' ) );
+			echo '</div>';
+		} else {
+			//does not have a featured image
+			echo '<div id="page-featured-image" class="no-image orange"> </div>';
+		}
+	}//end if NOT front page
+}

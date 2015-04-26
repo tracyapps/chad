@@ -546,6 +546,9 @@ Common Classes
 .off-white {
   background: #e0e0e0; }
 
+.transparent-light {
+  background: rgba(255, 255, 255, 0.8); }
+
 /* elevator :)
 --------------------------------------------- */
 .elevator {

@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 50 1008 612" enable-background="new 0 0 1008 612" xml:space="preserve" preserveAspectRatio="xMidYMin slice">
+<a href="<?php echo get_home_url(); ?>"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 50 1008 612" enable-background="new 0 0 1008 612" xml:space="preserve" preserveAspectRatio="xMidYMin slice">
+	<defs>
+		<style type="text/css">@import url(http://fonts.googleapis.com/css?family=Cabin:600|Cabin+Sketch|Orbitron);</style>
+	</defs>
 <g id="svg_logo">
 	<g id="wings-back">
 		<polygon points="638.1,205.5 646.8,179.1 625.4,195.4 588.3,257.1 618.8,234.8 612.2,270.8 654,212.7 658.4,187.5" class="style0"/>
@@ -62,3 +65,4 @@
 	<text transform="matrix(1 0 0 1 513 454.1738)" class="style14">User Friendly</text>
 </g>
 </svg>
+</a>

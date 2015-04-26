@@ -1287,6 +1287,7 @@ Structure and Layout
 		display: block;
 		float: right;
 		margin-left: 2.1276595745%;
+		padding-top: 80px;
 		width: 31.914893617%;
 	}
 
@@ -1614,6 +1615,10 @@ Common Classes
 
 .off-white {
 	background: #e0e0e0;
+}
+
+.transparent-light {
+	background: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -1985,7 +1990,7 @@ SVG logo
 }
 
 .style4 {
-	font-family: "Cabin";
+	font-family: "Cabin" !important;
 	font-size: 102.7113px;
 	font-weight: 600;
 
@@ -2002,7 +2007,7 @@ SVG logo
 }
 
 .style6 {
-	font-family: "Cabin";
+	font-family: "Cabin" !important;
 	font-size: 102.7113px;
 	font-weight: 600;
 	letter-spacing: -2;
@@ -2011,7 +2016,7 @@ SVG logo
 }
 
 .style7 {
-	font-family: "Cabin";
+	font-family: "Cabin" !important;
 	font-size: 102.7113px;
 	font-weight: 600;
 	letter-spacing: -1;
@@ -2051,7 +2056,7 @@ SVG logo
 }
 
 .style13 {
-	font-family: "Orbitron";
+	font-family: "Orbitron" !important;
 	font-size: 48px;
 	font-weight: 400;
 
@@ -2059,7 +2064,7 @@ SVG logo
 }
 
 .style14 {
-	font-family: "Cabin Sketch";
+	font-family: "Cabin Sketch" !important;
 	font-size: 58.7312px;
 
 	fill: #231f20;
@@ -2251,7 +2256,7 @@ Site Header
 .site-header {
 	background-color: #f5f5f5;
 	color: #36332d;
-	height: 450px;
+	height: 200px;
 	padding: 0 0 2em 0;
 	position: fixed;
 	top: 0;
@@ -2270,6 +2275,12 @@ Site Header
 	visibility: hidden;
 }
 
+@media screen and (min-width: 810px) {
+	.site-header {
+		height: 450px;
+	}
+}
+
 .site-header #branding {
 	display: block;
 	max-height: 410px;
@@ -2280,23 +2291,51 @@ Site Header
 
 .site-header #branding svg {
 	max-height: 100%;
-	max-width: 80%;
+	max-width: 100%;
+	text-rendering: optimizeLegibility;
 	width: auto;
+
+	-webkit-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga", "dlig";
+	-moz-font-feature-settings: "liga=1, dlig=1";
+	/* EDIT: new syntax for FF 15+ */
+	-ms-font-feature-settings: "liga", "dlig";
+	-o-font-feature-settings: "liga", "dlig";
+	font-feature-settings: "liga", "dlig";
+}
+
+@media screen and (min-width: 810px) {
+	.site-header #branding svg {
+		max-width: 80%;
+	}
 }
 
 .site-header.smaller {
 	background-color: rgba(245, 245, 245, 0.9);
-	height: 170px;
+	height: 90px;
+}
+
+@media screen and (min-width: 810px) {
+	.site-header.smaller {
+		height: 170px;
+	}
 }
 
 .site-header.smaller #branding {
-	max-height: 117px;
-	max-width: 40%;
+	max-height: 70px;
+	max-width: 30%;
 }
 
-.site-header.smaller #branding svg {
-	max-height: 90%;
-	width: auto;
+@media screen and (min-width: 810px) {
+	.site-header.smaller #branding {
+		max-height: 117px;
+		max-width: 40%;
+	}
+
+	.site-header.smaller #branding svg {
+		max-height: 90%;
+		width: auto;
+	}
 }
 
 
@@ -2311,32 +2350,9 @@ Site Header
 	width: auto;
 }
 
-.site-title {
-	display: none;
-	font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 2.2777777778rem;
-	font-weight: 600;
-	line-height: 1.2;
-	text-rendering: optimizeLegibility;
-}
-
-.site-title a,
-.site-title a:hover,
-.site-title a:focus {
-	color: #1c1e1f;
-}
-
-.site-description {
-	color: #36332d;
-	display: none;
-	font-family: Cabin, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: -0.5rem;
-	font-weight: 400;
-	line-height: 1.5;
-}
-
 .site-description,
 .site-title {
+	display: none;
 	margin-bottom: 0;
 }
 
@@ -2456,81 +2472,6 @@ Site Navigation
 	padding: 10px 0 0;
 }
 
-
-/* Primary Navigation
----------------------------------------------
-
-.site-header .menu-primary {
-	@include media($medium-screen-up) {
-		@include span-columns(9);
-		float: right;
-		text-align: right;
-	}
-
-	li > a {
-		padding-top: 23px;
-		padding-bottom: 23px;
-	}
-
-	.sub-menu {
-		border-top: 1px solid $menu-header-border-color;
-
-		.sub-menu {
-			margin-top: -60px;
-		}
-	}
-}
-
-.menu-primary {
-	display: none;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-}
-
-.no-menu {
-	display: none;
-	margin: 0;
-	padding: 2px 0;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-
-	.button {
-		padding: 8px 20px;
-		margin: 8px 0 8px 20px;
-	}
-}
-*/
-
-
-/* Secondary Navigation
----------------------------------------------
-
-.menu-secondary {
-	background-color: $menu-secondary-background-color;
-	border-bottom: 1px solid $menu-secondary-border-color;
-	display: none;
-
-	@include media($medium-screen-up) {
-		display: block;
-	}
-
-	li > a {
-		color: $menu-secondary-link-color;
-	}
-
-	li > a:hover,
-	li > a:focus,
-	.current-menu-item > a,
-	.sub-menu .current-menu-item > a:hover,
-	.sub-menu .current-menu-item > a:focus {
-		color: $menu-secondary-link-color-hover;
-	}
-}*/
-
 .menu-primary {
 	background-color: rgba(255, 255, 255, 0.9);
 	border-bottom: 1px solid #f5f5f5;
@@ -2541,7 +2482,7 @@ Site Navigation
 @media screen and (min-width: 1023px) {
 	.menu-primary {
 		display: block;
-		opacity: 0;
+		opacity: 0.5;
 		-webkit-transition: all 1.2s;
 		transition: all 1.2s;
 	}
@@ -2561,6 +2502,18 @@ Site Navigation
 
 @media screen and (min-width: 1023px) {
 	.site-header.smaller .menu-primary {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.home .site-header .menu-primary {
+		opacity: 0;
+		-webkit-transition: all 1.2s;
+		transition: all 1.2s;
+	}
+
+	.home .site-header.smaller .menu-primary {
 		opacity: 1;
 	}
 }
@@ -2906,6 +2859,20 @@ Content Area
 
 .section.l-2col-aside-main .section-aside:last-child {
 	margin-left: 0;
+}
+
+
+/* Page (general)
+--------------------------------------------- */
+
+#page-featured-image {
+	height: 500px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.page-wrap {
+	margin-top: -300px;
 }
 
 

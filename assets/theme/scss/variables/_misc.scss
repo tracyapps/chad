@@ -9,7 +9,8 @@ $form-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 
 // sticky header height
-$site-header-starting-height: 450px;
+$site-header-starting-height-desktop: 450px;
+$site-header-starting-height-mobile: 200px;
 
 @mixin inverse-text-color-styles {
 	color: $inverse-font-color;
