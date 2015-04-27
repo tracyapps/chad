@@ -33,9 +33,9 @@ $base-button-font-size: $medium-font-size;
 $h1-font-size: rem(floor(modular-scale(6, $base-font-size, $major-second)));
 $h2-font-size: rem(floor(modular-scale(5, $base-font-size, $major-second)));
 $h3-font-size: rem(floor(modular-scale(4, $base-font-size, $major-second)));
-$h4-font-size: rem(floor(modular-scale(3, $base-font-size, $major-second)));
-$h5-font-size: rem(floor(modular-scale(2, $base-font-size, $major-second)));
-$h6-font-size: rem(floor(modular-scale(1, $base-font-size, $major-second)));
+$h4-font-size: rem(floor(modular-scale(4.5, $base-font-size, $major-second)));
+$h5-font-size: rem(floor(modular-scale(3, $base-font-size, $major-second)));
+$h6-font-size: rem(floor(modular-scale(2, $base-font-size, $major-second)));
 
 $h1-font-size-small: rem(floor(modular-scale(5, $base-font-size, $major-second)));
 $h2-font-size-small: rem(floor(modular-scale(4, $base-font-size, $major-second)));

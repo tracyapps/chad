@@ -9,6 +9,8 @@
 	text-transform: uppercase;
 	width: auto;
 	border: 1px solid darken($base-button-background-color, 10);
+	@include letterpress ( 0, -1px, 0px, $subtle-letterpress-shadow );
+	@include color-box-shadow( $orange );
 }
 
 %cta-button-style {

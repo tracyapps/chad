@@ -104,14 +104,20 @@ if ( class_exists( 'Fieldmanager_Field' ) ) :
 			}
 			else {
 
+				$the_icon_path = get_template_directory() . '/images/png/';
+				$the_icon_array = array_diff( scandir( $the_icon_path ), array( '..', '.' ) );
+				$the_icon_array = array_map( function ( $e ) {
+					return pathinfo( $e, PATHINFO_FILENAME );
+				}, $the_icon_array );
 
-				$fm = new Fieldmanager_Textfield( false, array(
-						'name'			=> 'page_tagline',
-						'attributes'    => array( 'style' => 'width:100%' )
+				$fm = new Fieldmanager_Radios( false, array(
+						'name'		=> 'page_icon',
+						'options_template' => get_template_directory() . '/includes/icon_template.php',
+						'options' 	=> $the_icon_array,
 					)
 				);
 
-				$fm->add_meta_box( 'Page Tagline', 'page' );
+				$fm->add_meta_box( 'Page Icon', 'page' );
 
 			}
 		}

@@ -137,8 +137,53 @@
 }
 
 
+/* savvior grid
+--------------------------------------------- */
+
+#blog-grid {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.box:last-child {
+		margin-bottom: 0;
+	}
+	.box {
+		padding: 20px;
+		margin-bottom: 20px;
+		@include grey-box-shadow;
+
+		.post-featured-image-thumbnail {
+			margin: 6px -25px;
+			img {
+				border: 1px solid $orange;
+				@include color-box-shadow( $orange );
+			}
+		}
+		p {
+			font-size: 0.8em;
+		}
+	}
+	.column { float: left; padding: 10px; box-sizing: border-box; }
+	.size-1of1 { width: 100%; }
+	.size-1of2 { width: 50%; }
+	.size-1of3 { width: 33.33333%; }
+	.size-1of4 { width: 25%; }
+}
+
+
+
+
+
 /* Entries
 --------------------------------------------- */
+
+.read-more {
+	white-space: nowrap;
+}
 
 .entry {
 	margin-bottom: $base-margin;

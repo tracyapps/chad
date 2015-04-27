@@ -13,6 +13,7 @@ body {
 	font-weight: 400;
 	line-height: $base-line-height;
 	-webkit-font-smoothing: antialiased;
+	@include letterpress ( 0, 1px, 0, $default-letterpress );
 }
 
 a,

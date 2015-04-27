@@ -6,12 +6,14 @@
 	"immed": true,
 	"latedef": true,
 	"newcap": true,
-	"noarg": true,
+	"noarg": false,
 	"quotmark": "single",
 	"sub": true,
-	"strict": true,
-	"undef": true,
+	"strict": false,
+	"undef": false,
 	"unused": true,
+	"camelcase": false,
+	"futurehostile": false,
 
 	"node": true
 }

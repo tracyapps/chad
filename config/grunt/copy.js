@@ -154,7 +154,8 @@ module.exports = {
 					'fitvids/jquery.fitvids.js',
 					'accessible-menu/dist/jquery.accessible-menu.js',
 					'sidr/jquery.sidr.min.js',
-					'parallax.js/parallax.js'
+					'parallax.js/parallax.js',
+					'savvior/dist/savvior.js'
 				],
 				dest: '<%= paths.bower%>js/concat'
 			}

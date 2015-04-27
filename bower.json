@@ -8,6 +8,7 @@
 		"fitvids": "~1.1",
 		"accessible-menu": "GaryJones/accessible-menu#master",
 		"skip-link-focus": "~0.1.0",
-		"parallax.js": "~1.3"
+		"parallax.js": "~1.3",
+		"savvior": "~0.5"
 	}
 }

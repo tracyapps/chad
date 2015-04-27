@@ -17,6 +17,7 @@ $white: #fff;
 $seafoam: #33b787;
 $green: #8cd953;
 $orange: #f7941e;
+$light-orange: #fcb640;
 $light-blue: #4fcbe1;
 $medium-blue: #1e97ac;
 $purple: #5d4e72;
@@ -24,6 +25,11 @@ $purple: #5d4e72;
 //semi-transparent background colors
 $transparent-dark: rgba( 0, 0, 0, 0.4 );
 $transparent-light: rgba( 255, 255, 255, 0.8 );
+
+//letterpress colors
+$letterpress-shadow-color: rgba( 0, 0, 0, 0.9);
+$letterpress-highlight-color: rgba( 255, 255, 255, 0.5);
+$subtle-letterpress-shadow: rgba( 0, 0, 0, 0.2 );
 
 
 
@@ -43,6 +49,14 @@ $base-selection-background-color: $green;
 $base-selection-color: $off-black;
 $base-insert-color: lighten($medium-blue, 45);
 $cta-background-color: $dark-gray;
+
+//letterpress shadow/highlight
+$default-letterpress: $letterpress-highlight-color;
+$inverse-letterpress: $letterpress-shadow-color;
+
+//svg icons
+$default-svg-color: $orange;
+$inverse-svg-color: $light-blue;
 
 //semi-transparent text values (for meta and less important text areas)
 $transparent-text: transparentize( $dark-gray, 0.6 );

@@ -10,9 +10,10 @@
 	"noarg": true,
 	"quotmark": "single",
 	"sub": true,
-	"strict": true,
-	"undef": true,
-	"unused": true,
+	"strict": false,
+	"undef": false,
+	"unused": false,
+	"camelcase": false,
 
 	"browser": true,
 	"jquery": true,

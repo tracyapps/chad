@@ -68,6 +68,9 @@ function chad_enqueue_styles ()
 		array (),
 		null
 	);
+	wp_enqueue_style( 'icons_fallback', get_template_directory_uri() . '/images/icons.fallback.css', false, null );
+	wp_enqueue_style( 'icons_png', get_template_directory_uri() . '/images/icons.data.png.css', false, null );
+	wp_enqueue_style( 'icons_svg', get_template_directory_uri() . '/images/icons.data.svg.css', false, null );
 }
 
 add_action ( 'wp_enqueue_scripts', 'chad_enqueue_scripts' );
@@ -81,12 +84,27 @@ add_action ( 'wp_enqueue_scripts', 'chad_enqueue_scripts' );
 function chad_enqueue_scripts ()
 {
 	$js_dir = trailingslashit ( get_template_directory_uri () ) . 'js/';
+	$img_dir = trailingslashit ( get_template_directory_uri () ) . 'images/';
 	$suffix = hybrid_get_min_suffix ();
 
+	wp_enqueue_script (
+		'enquire',
+		'//cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js',
+		array ( 'jquery' ),
+		null,
+		true
+	);
 	wp_enqueue_script (
 		'chad',
 		$js_dir . "theme.js",
 		array ( 'jquery' ),
+		null,
+		true
+	);
+	wp_enqueue_script (
+		'grunticon',
+		$img_dir . "grunticon.loader.js",
+		array(),
 		null,
 		true
 	);

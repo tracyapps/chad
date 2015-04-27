@@ -37,7 +37,8 @@ body {
   font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.625;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button {
   -webkit-transition: all, 0.1s, ease-in-out;
@@ -175,21 +176,22 @@ h4 {
   font-size: 1.2222222222rem; }
   @media screen and (min-width: 810px)  {
     h4 {
-      font-size: 1.3888888889rem; } }
+      font-size: 1.7777777778rem; } }
 
 h5 {
   font-size: 1.1111111111rem; }
   @media screen and (min-width: 810px)  {
     h5 {
-      font-size: 1.2222222222rem; } }
+      font-size: 1.3888888889rem; } }
 
 h6 {
-  font-size: 1.1111111111rem; }
+  font-size: 1.2222222222rem; }
 
 /* Inverse colors
 --------------------------------------------- */
 .inverse-bg {
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9); }
   .inverse-bg p {
     color: #fff; }
   .inverse-bg blockquote {
@@ -202,7 +204,8 @@ h6 {
       color: #7bd8e8; }
   .inverse-bg button, .inverse-bg input[type="button"], .inverse-bg input[type="reset"], .inverse-bg input[type="submit"], .inverse-bg .button {
     background-color: #f7941e;
-    color: #fff; }
+    color: #fff;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2); }
     .inverse-bg button:hover, .inverse-bg button:focus, .inverse-bg input[type="button"]:hover, .inverse-bg input[type="button"]:focus, .inverse-bg input[type="reset"]:hover, .inverse-bg input[type="reset"]:focus, .inverse-bg input[type="submit"]:hover, .inverse-bg input[type="submit"]:focus, .inverse-bg .button:hover, .inverse-bg .button:focus {
       background-color: #f9ab4f;
       color: #fff; }
@@ -460,7 +463,9 @@ dl {
   text-align: center;
   text-transform: uppercase;
   width: auto;
-  border: 1px solid #da7a08; }
+  border: 1px solid #da7a08;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(247, 148, 30, 0.8); }
 
 .cta.button {
   background-color: #f7941e;
@@ -497,9 +502,13 @@ Common Classes
 .orange {
   background: #f7941e; }
 
+.light-orange {
+  background: #fcb640; }
+
 .dark-grey {
   background: #36332d;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9); }
   .dark-grey p {
     color: #fff; }
   .dark-grey blockquote {
@@ -512,7 +521,8 @@ Common Classes
       color: #7bd8e8; }
   .dark-grey button, .dark-grey input[type="button"], .dark-grey input[type="reset"], .dark-grey input[type="submit"], .dark-grey .button {
     background-color: #f7941e;
-    color: #fff; }
+    color: #fff;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2); }
     .dark-grey button:hover, .dark-grey button:focus, .dark-grey input[type="button"]:hover, .dark-grey input[type="button"]:focus, .dark-grey input[type="reset"]:hover, .dark-grey input[type="reset"]:focus, .dark-grey input[type="submit"]:hover, .dark-grey input[type="submit"]:focus, .dark-grey .button:hover, .dark-grey .button:focus {
       background-color: #f9ab4f;
       color: #fff; }
@@ -525,7 +535,8 @@ Common Classes
 
 .purple {
   background: #5d4e72;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9); }
   .purple p {
     color: #fff; }
   .purple blockquote {
@@ -538,7 +549,8 @@ Common Classes
       color: #7bd8e8; }
   .purple button, .purple input[type="button"], .purple input[type="reset"], .purple input[type="submit"], .purple .button {
     background-color: #f7941e;
-    color: #fff; }
+    color: #fff;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2); }
     .purple button:hover, .purple button:focus, .purple input[type="button"]:hover, .purple input[type="button"]:focus, .purple input[type="reset"]:hover, .purple input[type="reset"]:focus, .purple input[type="submit"]:hover, .purple input[type="submit"]:focus, .purple .button:hover, .purple .button:focus {
       background-color: #f9ab4f;
       color: #fff; }
@@ -548,6 +560,13 @@ Common Classes
 
 .transparent-light {
   background: rgba(255, 255, 255, 0.8); }
+
+.icon.alignleft, .icon.alignright, .icon.aligncenter {
+  margin-bottom: 0px; }
+
+.icon-md {
+  width: 50px;
+  height: 50px; }
 
 /* elevator :)
 --------------------------------------------- */

@@ -34,6 +34,7 @@ function chad_register_image_sizes ()
 	// Add the 'chad-full' image size.
 	add_image_size ( 'chad-full', 1025, 500, true );
 	add_image_size( 'page-featured-image', 2000, 1700, true );
+	add_image_size( 'blog-featured-image-sm', 600, 350, true );
 }
 
 add_filter ( 'excerpt_length', 'chad_excerpt_length' );
@@ -48,6 +49,35 @@ add_filter ( 'excerpt_length', 'chad_excerpt_length' );
 function chad_excerpt_length ( $length )
 {
 	return 60;
+}
+/**
+ * custom excerpt length. usage example: echo excerpt(25);
+ **/
+
+function excerpt( $limit ) {
+	$excerpt = explode( ' ', get_the_excerpt(), $limit );
+	if ( count( $excerpt ) >= $limit ) {
+		array_pop( $excerpt );
+		$excerpt = implode( " ", $excerpt ) . '... <a class="read-more" href="' . get_permalink() . '">Read more &raquo;</a>';
+	} else {
+		$excerpt = implode( " ", $excerpt );
+	}
+	$excerpt = preg_replace( '`[[^]]*]`', '', $excerpt );
+	return $excerpt;
+}
+
+function hybridexcerpt( $limit ) {
+	$hybridexcerpt = explode( ' ', get_the_content(), $limit );
+	if ( count( $hybridexcerpt ) >= $limit ) {
+		array_pop( $hybridexcerpt );
+		$hybridexcerpt = implode( " ", $hybridexcerpt ) . '... <a class="read-more" href="' . get_permalink() . '">Read more &raquo;</a>';
+	} else {
+		$hybridexcerpt = implode( " ",$hybridexcerpt );
+	}
+	$hybridexcerpt = preg_replace( '/[+]/', '', $hybridexcerpt );
+	$hybridexcerpt = apply_filters( 'the_content', $hybridexcerpt );
+	$hybridexcerpt = strip_tags( $hybridexcerpt, '<p><b><a><br /><li><ol><ul>' );
+	return $hybridexcerpt;
 }
 
 /**
@@ -73,11 +103,13 @@ function chad_loop_home_section( $section_key ) {
 	$section_data = get_post( $section_id );
 	$section_layout = $section_key[ 'the_section_layout' ];
 	$section_media = $section_key[ 'the_section_media' ];
+	$section_for_blog_posts = get_option( 'page_for_posts' );
+	$page_icon = get_post_meta( $section_id, 'page_icon', true );
 	?>
 	<section id='<?php esc_html_e( $section_data->post_name, 'chad' ); ?>' class='<?php echo esc_html( $section_key[ 'the_section_bg_color' ] ) . ' ' . esc_html( $section_layout ); ?> section' <?php if ( $deviceType == 'desktop' ) { echo ' data-type="background" data-speed="10" '; } ?>>
 		<div class="wrap">
 			<div class="section-main">
-				<h2 class="page-title"><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
+				<h2 class="page-title"><div class="icon-<?php esc_html_e( $page_icon, 'chad' ); ?> icon icon-md alignleft"></div><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
 				<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
 				<?php
 				if ( $section_key[ 'the_section_button_label' ] != '' ) {
@@ -95,10 +127,49 @@ function chad_loop_home_section( $section_key ) {
 					}; ?>
 				</aside>
 			<?php endif; ?>
+
 		</div>
+		<?php if( $section_id == $section_for_blog_posts ) { chad_loop_blog_posts( '6' ); } ?>
 	</section>
 <?php
 }
+
+/**
+ * function (include) to cycle through post excerpts on home page (if is blog page)
+ * (this is being included / called in the function above)
+ * @param $num_of_posts
+ * @return mixed
+ */
+
+function chad_loop_blog_posts( $num_of_posts ) { ?>
+	<div class="homepage-blog-post-container wrap" id="blog-grid">
+		<?php
+		$blog_query_args = array(
+			'posts_per_page'	=> $num_of_posts,
+			'post_type'			=> 'post',
+		);
+		$blog_query = new WP_Query( $blog_query_args );
+
+		//loop-de-loop
+		while ( $blog_query -> have_posts() ) :
+			$blog_query -> the_post(); ?>
+			<div class="post-container light-orange box box1">
+				<h6 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+				<?php if( has_post_thumbnail( get_the_ID() ) ) { ?>
+					<div class="post-featured-image-thumbnail">
+						<?php the_post_thumbnail( 'blog-featured-image-sm' ); ?>
+					</div>
+				<?php }; ?>
+				<p><?php echo wp_kses_post( hybridexcerpt( 15 ), 'chad' ); ?></p>
+			</div>
+		<?php
+		endwhile;
+		wp_reset_postdata();
+		?>
+	</div>
+<?php
+}
+
 
 add_action ( 'tha_entry_top', 'chad_do_sticky_banner' );
 /**
@@ -125,7 +196,7 @@ function chad_do_sticky_banner() {
 
 function chad_svg_logo() {
 	echo get_template_part( 'includes/CL-logo-forweb-compressed.svg' );
- }
+}
 
 /**
  * displays featured image on page
@@ -148,3 +219,54 @@ function chad_featured_image_page_header() {
 		}
 	}//end if NOT front page
 }
+
+
+/**
+ * adding a shortcode to add an SVG icon
+ */
+
+function chad_svg_icon_shortcode( $atts )
+{
+	extract( shortcode_atts( array(
+		'icon' => 'abacus',
+		'size' => '100px',
+		'align' => 'right',
+	), $atts, 'chad' ) );
+
+	return sprintf( '<div class="icon icon-%1$s" style="width: %2$s; height: %2$s; float: %3$s; margin:6px;"></div>',
+		esc_html( $icon ),
+		esc_html( $size ),
+		esc_html( $align )
+	);
+}
+
+add_shortcode( 'icon', 'chad_svg_icon_shortcode' );
+
+
+/**
+ * add icon cheat sheet into page/post content
+ */
+
+add_filter( 'mce_external_plugins', 'icon_cheatsheet_add_button' );
+function icon_cheatsheet_add_button( $plugins )
+{
+	$plugins[ 'icon_cheatsheet' ] = get_template_directory_uri() . '/includes/icon-cheatsheet.js';
+	return $plugins;
+}
+
+add_filter( 'mce_buttons', 'icon_cheatsheet_register_button' );
+function icon_cheatsheet_register_button( $buttons )
+{
+	array_push( $buttons, 'icon_cheatsheet' );
+	return $buttons;
+}
+
+add_action( 'wp_ajax_icon_cheatsheet_insert_dialog', 'icon_cheatsheet_insert_dialog' );
+
+function icon_cheatsheet_insert_dialog()
+{
+
+	die( include get_template_directory() . '/includes/view-icon-cheatsheet.php' );
+
+}
+

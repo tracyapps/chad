@@ -2,6 +2,7 @@
 .icon-abacus {
 	background-image: url('images/abacus.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -9,6 +10,7 @@
 .icon-amazon {
 	background-image: url('images/amazon.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -16,6 +18,7 @@
 .icon-apple {
 	background-image: url('images/apple.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -23,6 +26,7 @@
 .icon-arrow-down {
 	background-image: url('images/arrow-down.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -30,6 +34,7 @@
 .icon-arrow-left {
 	background-image: url('images/arrow-left.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -37,6 +42,7 @@
 .icon-arrow-right {
 	background-image: url('images/arrow-right.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -44,6 +50,7 @@
 .icon-arrow-up {
 	background-image: url('images/arrow-up.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -51,6 +58,7 @@
 .icon-aside {
 	background-image: url('images/aside.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -58,6 +66,15 @@
 .icon-audio {
 	background-image: url('images/audio.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-award52 {
+	background-image: url('images/award52.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -65,6 +82,7 @@
 .icon-bandcamp {
 	background-image: url('images/bandcamp.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -72,6 +90,7 @@
 .icon-behance {
 	background-image: url('images/behance.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -79,6 +98,7 @@
 .icon-bloglovin {
 	background-image: url('images/bloglovin.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -86,6 +106,39 @@
 .icon-book {
 	background-image: url('images/book.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-books8 {
+	background-image: url('images/books8.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-boy11 {
+	background-image: url('images/boy11.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-brick6 {
+	background-image: url('images/brick6.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-businessman269 {
+	background-image: url('images/businessman269.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -93,6 +146,7 @@
 .icon-calendar {
 	background-image: url('images/calendar.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -100,6 +154,7 @@
 .icon-camera-alt {
 	background-image: url('images/camera-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -107,6 +162,7 @@
 .icon-camera {
 	background-image: url('images/camera.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -114,6 +170,7 @@
 .icon-cancel {
 	background-image: url('images/cancel.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -121,6 +178,7 @@
 .icon-caret-down {
 	background-image: url('images/caret-down.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -128,6 +186,7 @@
 .icon-caret-left {
 	background-image: url('images/caret-left.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -135,6 +194,7 @@
 .icon-caret-right {
 	background-image: url('images/caret-right.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -142,6 +202,7 @@
 .icon-caret-up {
 	background-image: url('images/caret-up.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -149,6 +210,7 @@
 .icon-cart {
 	background-image: url('images/cart.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -156,6 +218,7 @@
 .icon-chat {
 	background-image: url('images/chat.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -163,6 +226,15 @@
 .icon-check {
 	background-image: url('images/check.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-checkered12 {
+	background-image: url('images/checkered12.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -170,6 +242,7 @@
 .icon-chevron-down {
 	background-image: url('images/chevron-down.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -177,6 +250,7 @@
 .icon-chevron-left {
 	background-image: url('images/chevron-left.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -184,6 +258,7 @@
 .icon-chevron-right {
 	background-image: url('images/chevron-right.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -191,6 +266,31 @@
 .icon-chevron-up {
 	background-image: url('images/chevron-up.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-class6 {
+	background-image: url('images/class6.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-clipboard109 {
+	background-image: url('images/clipboard109.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-clock151 {
+	background-image: url('images/clock151.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -198,6 +298,7 @@
 .icon-close {
 	background-image: url('images/close.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -205,6 +306,7 @@
 .icon-codepen-alt {
 	background-image: url('images/codepen-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -212,6 +314,7 @@
 .icon-codepen {
 	background-image: url('images/codepen.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -219,6 +322,15 @@
 .icon-comment {
 	background-image: url('images/comment.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-curriculum3 {
+	background-image: url('images/curriculum3.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -226,6 +338,15 @@
 .icon-dribbble {
 	background-image: url('images/dribbble.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-e-learning {
+	background-image: url('images/e-learning.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -233,6 +354,7 @@
 .icon-edit-alt {
 	background-image: url('images/edit-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -240,6 +362,7 @@
 .icon-edit {
 	background-image: url('images/edit.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -247,6 +370,7 @@
 .icon-error {
 	background-image: url('images/error.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -254,6 +378,7 @@
 .icon-external {
 	background-image: url('images/external.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -261,6 +386,7 @@
 .icon-facebook-alt {
 	background-image: url('images/facebook-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -268,6 +394,7 @@
 .icon-facebook {
 	background-image: url('images/facebook.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -275,6 +402,7 @@
 .icon-fast-forward {
 	background-image: url('images/fast-forward.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -282,6 +410,15 @@
 .icon-feed {
 	background-image: url('images/feed.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-first31 {
+	background-image: url('images/first31.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -289,6 +426,7 @@
 .icon-flickr {
 	background-image: url('images/flickr.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -296,6 +434,7 @@
 .icon-folder {
 	background-image: url('images/folder.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -303,6 +442,23 @@
 .icon-gallery {
 	background-image: url('images/gallery.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-garden1 {
+	background-image: url('images/garden1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-gear65 {
+	background-image: url('images/gear65.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -310,6 +466,23 @@
 .icon-github {
 	background-image: url('images/github.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-glasses2 {
+	background-image: url('images/glasses2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-global5 {
+	background-image: url('images/global5.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -317,6 +490,7 @@
 .icon-googleplay-alt {
 	background-image: url('images/googleplay-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -324,6 +498,7 @@
 .icon-googleplay {
 	background-image: url('images/googleplay.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -331,6 +506,15 @@
 .icon-googleplus {
 	background-image: url('images/googleplus.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-graduate38 {
+	background-image: url('images/graduate38.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -338,6 +522,15 @@
 .icon-heart {
 	background-image: url('images/heart.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-idea11 {
+	background-image: url('images/idea11.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -345,6 +538,7 @@
 .icon-image {
 	background-image: url('images/image.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -352,6 +546,7 @@
 .icon-instagram {
 	background-image: url('images/instagram.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -359,6 +554,15 @@
 .icon-iphone {
 	background-image: url('images/iphone.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-kites {
+	background-image: url('images/kites.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -366,6 +570,23 @@
 .icon-lastfm {
 	background-image: url('images/lastfm.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-leaf64 {
+	background-image: url('images/leaf64.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-lifeguard8 {
+	background-image: url('images/lifeguard8.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -373,6 +594,7 @@
 .icon-link-alt {
 	background-image: url('images/link-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -380,6 +602,7 @@
 .icon-link {
 	background-image: url('images/link.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -387,6 +610,7 @@
 .icon-linkedin {
 	background-image: url('images/linkedin.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -394,6 +618,7 @@
 .icon-loading {
 	background-image: url('images/loading.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -401,6 +626,15 @@
 .icon-loop {
 	background-image: url('images/loop.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-magician {
+	background-image: url('images/magician.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -408,6 +642,7 @@
 .icon-mail {
 	background-image: url('images/mail.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -415,6 +650,7 @@
 .icon-medium {
 	background-image: url('images/medium.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -422,6 +658,7 @@
 .icon-menu {
 	background-image: url('images/menu.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -429,6 +666,15 @@
 .icon-minus {
 	background-image: url('images/minus.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-palmtrees {
+	background-image: url('images/palmtrees.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -436,6 +682,7 @@
 .icon-paper {
 	background-image: url('images/paper.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -443,6 +690,7 @@
 .icon-paperclip {
 	background-image: url('images/paperclip.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -450,6 +698,7 @@
 .icon-pause {
 	background-image: url('images/pause.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -457,6 +706,7 @@
 .icon-person {
 	background-image: url('images/person.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -464,6 +714,7 @@
 .icon-phone {
 	background-image: url('images/phone.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -471,6 +722,7 @@
 .icon-pinterest {
 	background-image: url('images/pinterest.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -478,6 +730,7 @@
 .icon-play {
 	background-image: url('images/play.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -485,6 +738,7 @@
 .icon-playlist {
 	background-image: url('images/playlist.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -492,6 +746,7 @@
 .icon-plus {
 	background-image: url('images/plus.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -499,6 +754,39 @@
 .icon-post {
 	background-image: url('images/post.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-productivity {
+	background-image: url('images/productivity.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-programmer {
+	background-image: url('images/programmer.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-purchase1 {
+	background-image: url('images/purchase1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-quiz {
+	background-image: url('images/quiz.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -506,6 +794,7 @@
 .icon-quote {
 	background-image: url('images/quote.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -513,6 +802,7 @@
 .icon-rdio {
 	background-image: url('images/rdio.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -520,6 +810,7 @@
 .icon-repeat {
 	background-image: url('images/repeat.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -527,6 +818,7 @@
 .icon-reply {
 	background-image: url('images/reply.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -534,6 +826,7 @@
 .icon-restore {
 	background-image: url('images/restore.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -541,6 +834,7 @@
 .icon-reverbnation {
 	background-image: url('images/reverbnation.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -548,6 +842,31 @@
 .icon-rewind {
 	background-image: url('images/rewind.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-road41 {
+	background-image: url('images/road41.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-round41 {
+	background-image: url('images/round41.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-school3 {
+	background-image: url('images/school3.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -555,6 +874,15 @@
 .icon-search {
 	background-image: url('images/search.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-sell2 {
+	background-image: url('images/sell2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -562,6 +890,7 @@
 .icon-share-alt {
 	background-image: url('images/share-alt.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -569,6 +898,7 @@
 .icon-share {
 	background-image: url('images/share.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -576,6 +906,7 @@
 .icon-shuffle {
 	background-image: url('images/shuffle.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -583,6 +914,7 @@
 .icon-skip-ahead {
 	background-image: url('images/skip-ahead.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -590,6 +922,7 @@
 .icon-skip-back {
 	background-image: url('images/skip-back.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -597,6 +930,7 @@
 .icon-slideshare {
 	background-image: url('images/slideshare.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -604,6 +938,7 @@
 .icon-soundcloud {
 	background-image: url('images/soundcloud.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -611,6 +946,15 @@
 .icon-spotify {
 	background-image: url('images/spotify.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-star182 {
+	background-image: url('images/star182.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -618,6 +962,7 @@
 .icon-status {
 	background-image: url('images/status.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -625,6 +970,15 @@
 .icon-stop {
 	background-image: url('images/stop.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-suitcase54 {
+	background-image: url('images/suitcase54.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -632,6 +986,23 @@
 .icon-tag {
 	background-image: url('images/tag.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-target50 {
+	background-image: url('images/target50.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-tea24 {
+	background-image: url('images/tea24.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -639,6 +1010,15 @@
 .icon-time {
 	background-image: url('images/time.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-timer {
+	background-image: url('images/timer.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -646,6 +1026,7 @@
 .icon-tumblr {
 	background-image: url('images/tumblr.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -653,6 +1034,23 @@
 .icon-twitter {
 	background-image: url('images/twitter.png');
 	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-two17 {
+	background-image: url('images/two17.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+.icon-vehicle83 {
+	background-image: url('images/vehicle83.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -660,6 +1058,7 @@
 .icon-video {
 	background-image: url('images/video.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -667,6 +1066,7 @@
 .icon-vimeo {
 	background-image: url('images/vimeo.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -674,6 +1074,7 @@
 .icon-vine {
 	background-image: url('images/vine.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -681,6 +1082,7 @@
 .icon-volume-off {
 	background-image: url('images/volume-off.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -688,6 +1090,7 @@
 .icon-volume-on {
 	background-image: url('images/volume-on.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -695,6 +1098,7 @@
 .icon-wordpress {
 	background-image: url('images/wordpress.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 
@@ -702,6 +1106,7 @@
 .icon-youtube {
 	background-image: url('images/youtube.png');
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 

@@ -12,8 +12,23 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color
 $site-header-starting-height-desktop: 450px;
 $site-header-starting-height-mobile: 200px;
 
+// mixins
+
+@mixin grey-box-shadow {
+	box-shadow: 0 0 2px rgba( 0, 0, 0, 0.3 );
+}
+
+@mixin color-box-shadow( $shadow-color ) {
+	box-shadow: 0 0 2px transparentize( $shadow-color, 0.2 );
+}
+
+@mixin letterpress( $x, $y, $b, $color ) {
+	text-shadow: $x $y $b $color;
+}
+
 @mixin inverse-text-color-styles {
 	color: $inverse-font-color;
+	@include letterpress ( 0, -1px, 0, $inverse-letterpress );
 	p {
 		color: $inverse-font-color;
 	}
@@ -47,6 +62,7 @@ $site-header-starting-height-mobile: 200px;
 		@extend %button-base;
 		background-color: $base-button-background-color;
 		color: $base-button-font-color;
+		@include letterpress ( -1px, -1px, 0px, $subtle-letterpress-shadow );
 		&:hover,
 		&:focus {
 			background-color: $base-button-background-color-hover;
