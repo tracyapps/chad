@@ -2308,7 +2308,6 @@ Site Header
 	background-color: #f5f5f5;
 	color: #36332d;
 	height: 200px;
-	padding: 0 0 2em 0;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -2329,15 +2328,22 @@ Site Header
 @media screen and (min-width: 810px) {
 	.site-header {
 		height: 450px;
+		padding: 0 0 2em 0;
 	}
 }
 
 .site-header #branding {
 	display: block;
-	max-height: 410px;
+	max-height: 190px;
 	max-width: 95%;
 	-webkit-transition: all 1.2s;
 	transition: all 1.2s;
+}
+
+@media screen and (min-width: 810px) {
+	.site-header #branding {
+		max-height: 410px;
+	}
 }
 
 .site-header #branding svg {
@@ -2363,7 +2369,7 @@ Site Header
 
 .site-header.smaller {
 	background-color: rgba(245, 245, 245, 0.9);
-	height: 90px;
+	height: 50px;
 }
 
 @media screen and (min-width: 810px) {
@@ -2373,7 +2379,7 @@ Site Header
 }
 
 .site-header.smaller #branding {
-	max-height: 70px;
+	max-height: 60px;
 	max-width: 30%;
 }
 
@@ -2580,15 +2586,23 @@ body.menu-open {
 }
 
 .menu-button {
-	background: transparent;
+	background: #fcb640;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	color: #1c1e1f;
 	cursor: pointer;
 	display: block;
 	float: right;
-	margin: 7px 0;
-	padding: 0;
+	font-size: 12px;
+	margin: -47px -30px 0 0;
+	padding: 4px 6px;
+	-ms-transform: scale(1) rotate(-90deg);
+	-webkit-transform: scale(1) rotate(-90deg);
+	transform: scale(1) rotate(-90deg);
+}
+
+.menu-button.activated {
+	margin: -47px 231px 0 0;
 }
 
 @media screen and (min-width: 1023px) {
@@ -2600,8 +2614,8 @@ body.menu-open {
 .menu-button:hover,
 .menu-button:focus,
 .menu-button:active {
-	background: transparent;
-	color: #a4a5a5;
+	background: #f7941e;
+	color: #1c1e1f;
 	outline: none;
 }
 
@@ -2621,12 +2635,13 @@ body.menu-open {
 	background: #232627;
 	display: none;
 	height: 100%;
-	overflow-x: hidden;
+	overflow-x: visible;
 	overflow-y: auto;
 	position: fixed;
 	top: 0;
 	right: -260px;
 	left: auto;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.9);
 	width: 260px;
 	z-index: 1000;
 }
@@ -2705,7 +2720,13 @@ Content Area
 --------------------------------------------- */
 
 #site-inner {
-	margin-top: 450px;
+	margin-top: 200px;
+}
+
+@media screen and (min-width: 810px) {
+	#site-inner {
+		margin-top: 450px;
+	}
 }
 
 #home {

@@ -1,7 +1,6 @@
 .site-header {
 	background-color: $header-background-color;
 	color: $header-font-color;
-	padding: 0 0 2em 0;
 	-webkit-transition: all 1.2s;
 	-moz-transition: all 1.2s;
 	-ms-transition: all 1.2s;
@@ -23,17 +22,21 @@
 
 	@include media( $small-screen-up ) {
 		height: $site-header-starting-height-desktop;
+		padding: 0 0 2em 0;
 	}
 
 	#branding {
 		display: block;
 		max-width: 95%;
-		max-height: 410px;
+		max-height: 190px;
 		-webkit-transition: all 1.2s;
 		-moz-transition: all 1.2s;
 		-ms-transition: all 1.2s;
 		-o-transition: all 1.2s;
 		transition: all 1.2s;
+		@include media( $small-screen-up ) {
+			max-height: 410px;
+		}
 		svg {
 			width: auto;
 			max-width: 100%;
@@ -52,7 +55,7 @@
 	}
 
 	&.smaller {
-		height: 90px;
+		height: 50px;
 		background-color: transparentize( $light-fog, 0.1 );
 
 		@include media( $small-screen-up ) {
@@ -60,7 +63,7 @@
 		}
 
 		#branding {
-			max-height: 70px;
+			max-height: 60px;
 			max-width: 30%;
 
 			@include media( $small-screen-up ) {

@@ -35,26 +35,5 @@
 
 	</nav><!-- #menu-primary -->
 
-<?php elseif ( current_user_can ( 'edit_theme_options' ) && !has_nav_menu ( 'secondary' ) ) : ?>
-
-	<div class="header-right">
-		<p class="no-menu">
-
-			<?php _e ( "Ready to add your primary menu? Let's get started!", 'chad' ); ?>
-
-			<?php
-			printf ( '<a class="button" href="%1$s">%2$s</a>',
-				flagship_get_customizer_link ( array (
-					'focus_type' => 'section',
-					'focus_target' => 'nav',
-				) ),
-				__ ( 'Add a Menu', 'chad' )
-			);
-			?>
-
-		</p>
-	</div><!-- .header-right -->
-
 <?php
-
 endif;

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chad Lawson 2.0.0\n"
 "Report-Msgid-Bugs-To: Robert Neu <translations@flagshipwp.com>\n"
-"POT-Creation-Date: 2015-04-28 08:45:05+00:00\n"
+"POT-Creation-Date: 2015-04-28 22:43:22+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -905,14 +905,6 @@ msgid ""
 "page based on the chosen layout."
 msgstr ""
 
-#: assets/theme/menu/primary.php:43 menu/primary.php:43
-msgid "Ready to add your primary menu? Let's get started!"
-msgstr ""
-
-#: assets/theme/menu/primary.php:51 menu/primary.php:51
-msgid "Add a Menu"
-msgstr ""
-
 #: assets/theme/sidebar/header-right.php:29 sidebar/header-right.php:29
 msgid "This is a widget area! It's perfect for a custom menu."
 msgstr ""
@@ -1086,7 +1078,7 @@ msgstr ""
 
 #: assets/theme/functions.php:56 functions.php:56
 msgctxt "nav menu location"
-msgid "Secondary Menu"
+msgid "Footer Menu"
 msgstr ""
 
 #: assets/theme/includes/widgetize.php:25 includes/widgetize.php:25
@@ -1094,8 +1086,8 @@ msgctxt "sidebar"
 msgid "Primary Sidebar"
 msgstr ""
 
-#: assets/theme/menu/primary.php:19 assets/theme/menu/secondary.php:19
-#: menu/primary.php:19 menu/secondary.php:19
+#: assets/theme/menu/footer.php:19 assets/theme/menu/primary.php:19
+#: menu/footer.php:19 menu/primary.php:19
 #. Translators: %s is the nav menu name. This is the nav menu title shown to
 #. screen readers.
 msgctxt "nav menu title"

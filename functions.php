@@ -53,7 +53,7 @@ function chad_setup()
 	// https://developer.wordpress.org/themes/functionality/navigation-menus/
 	register_nav_menus( array(
 		'primary' => _x( 'Primary Menu', 'nav menu location', 'chad' ),
-		'secondary' => _x( 'Secondary Menu', 'nav menu location', 'chad' ),
+		'footer' => _x( 'Footer Menu', 'nav menu location', 'chad' ),
 	) );
 
 	// https://developer.wordpress.org/themes/functionality/post-formats/

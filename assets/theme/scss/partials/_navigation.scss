@@ -172,8 +172,14 @@ body {
 	cursor: pointer;
 	display: block;
 	float: right;
-	margin: 7px 0;
-	padding: 0;
+	margin: -47px -30px 0 0;
+	padding: 4px 6px;
+	font-size: 12px;
+	@include transform(scale(1) rotate(-90deg));
+
+	&.activated {
+		margin: -47px 231px 0 0;
+	}
 
 	@include media($medium-screen-up) {
 		display: none;
@@ -200,7 +206,7 @@ body {
 	background: $menu-mobile-background-color;
 	display: none;
 	height: 100%;
-	overflow-x: hidden;
+	overflow-x: visible;
 	overflow-y: auto;
 	left: auto;
 	position: fixed;
@@ -208,6 +214,7 @@ body {
 	top: 0;
 	width: 260px;
 	z-index: $menu-mobile-z-index;
+	@include letterpress ( 0, -1px, 0, $inverse-letterpress );
 
 	&:focus {
 		outline: none;

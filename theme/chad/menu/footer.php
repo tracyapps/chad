@@ -36,5 +36,4 @@
 	</nav><!-- #menu-footer -->
 
 <?php
-
 endif;

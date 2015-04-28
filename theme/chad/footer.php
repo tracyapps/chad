@@ -19,7 +19,7 @@
 
 	<div <?php hybrid_attr( 'wrap', 'footer' ); ?>>
 
-		<?php hybrid_get_menu( 'secondary' ); ?>
+		<?php hybrid_get_menu( 'footer' ); ?>
 
 		<p class="credit">
 			<?php

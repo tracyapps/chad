@@ -1238,19 +1238,13 @@ var Elevator=function(){"use strict";function n(n,e){for(var t in e)t in n||(n[t
 	};
 
 	$.fn.chadMobileMenu = function() {
-		var $menuButton = $$( '<button type="button" id="menu-toggle" class="menu-button" aria-expanded="false"></button>' ),
+		var $menuButton = $$( '<button type="button" id="menu-toggle" class="menu-button" aria-expanded="false">Menu</button>' ),
 			$mobileMenu = $$( '#menu-primary' ),
 			menuClass = 'menu-primary';
 
 		// Return early if we don't have any menus to work with.
-		if( 0 === $$( '#menu-primary' ).length && 0 === $$( '#menu-secondary' ).length ) {
-			return;
-		}
-
-		// Use the secondary menu as the mobile menu if we don't have a primary.
 		if( 0 === $$( '#menu-primary' ).length ) {
-			$mobileMenu = $$( '#menu-secondary' );
-			menuClass = 'menu-secondary';
+			return;
 		}
 
 		/**

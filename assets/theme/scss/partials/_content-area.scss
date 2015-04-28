@@ -1,7 +1,11 @@
 /* front-page
 --------------------------------------------- */
 #site-inner {
-	margin-top: $site-header-starting-height-desktop;
+	margin-top: $site-header-starting-height-mobile;
+
+	@include media( $small-screen-up ) {
+		margin-top: $site-header-starting-height-desktop;
+	}
 }
 #home {
 	width: 100%;
