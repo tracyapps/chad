@@ -1,0 +1,61 @@
+.decoration {
+	position: absolute;
+
+	.decoration-style0{
+		stroke:	#3A53A3;
+		stroke-width:	2;
+		stroke-miterlimit:	10;
+		fill:	none;
+	}
+	.decoration-style1{
+		stroke-miterlimit:	10;
+		stroke:	#3A53A3;
+		stroke-width:	2;
+		stroke-dasharray:	11.9032;
+		fill:	none;
+	}
+	&#svg-deco-about-section-arrow {
+		width: 110px !important;
+		height: auto;
+
+		-moz-transform: scale(1) rotate(-30deg);
+		-webkit-transform: scale(1) rotate(-30deg);
+		-o-transform: scale(1) rotate(-30deg);
+		-ms-transform: scale(1) rotate(-30deg);
+		transform: scale(1) rotate(-30deg);
+		z-index: -1;
+		svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&#svg-deco-speaking-section-arrow {
+		width: 300px !important;
+		height: auto;
+		-moz-transform: scale(1) rotate(45deg);
+		-webkit-transform: scale(1) rotate(45deg);
+		-o-transform: scale(1) rotate(45deg);
+		-ms-transform: scale(1) rotate(45deg);
+		transform: scale(1) rotate(45deg);
+		z-index: -1;
+		svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&#svg-deco-blog-section-arrow {
+
+	}
+	&#svg-deco-footer-section-arrow {
+		width: 80%;
+		-moz-transform: scale(1) rotate(10deg);
+		-webkit-transform: scale(1) rotate(10deg);
+		-o-transform: scale(1) rotate(10deg);
+		-ms-transform: scale(1) rotate(10deg);
+		transform: scale(1) rotate(10deg);
+		svg {
+			width:100%;
+			height: auto;
+		}
+	}
+}

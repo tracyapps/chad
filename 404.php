@@ -12,30 +12,23 @@
 <?php get_header(); ?>
 
 	<div <?php hybrid_attr( 'site-inner' ); ?>>
-
 		<?php tha_content_before(); ?>
+		<div class="wrap error-wrap">
+			<main <?php hybrid_attr( 'content' ); ?>>
+				<?php tha_content_top(); ?>
+				<?php hybrid_get_menu( 'breadcrumbs' ); ?>
 
-		<main <?php hybrid_attr( 'content' ); ?>>
+				<?php tha_entry_before(); ?>
+				<?php get_template_part( 'content/error', '404' ); ?>
+				<?php tha_entry_after(); ?>
 
-			<?php tha_content_top(); ?>
+				<?php tha_content_bottom(); ?>
 
-			<?php hybrid_get_menu( 'breadcrumbs' ); ?>
+			</main><!-- #content -->
 
-			<?php tha_entry_before(); ?>
-
-			<?php get_template_part( 'content/error', '404' ); ?>
-
-			<?php tha_entry_after(); ?>
-
-			<?php tha_content_bottom(); ?>
-
-		</main>
-		<!-- #content -->
-
-		<?php tha_content_after(); ?>
-
-		<?php hybrid_get_sidebar( 'primary' ); ?>
-
+			<?php tha_content_after(); ?>
+			<?php hybrid_get_sidebar( 'primary' ); ?>
+		</div><!--/.wrap-->
 	</div><!-- #site-inner -->
 
 <?php

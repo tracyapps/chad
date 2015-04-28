@@ -6,7 +6,6 @@
     "disallowSpacesInFunction": {
         "beforeOpeningRoundBrace": true
     },
-    "requireMultipleVarDecl": "onevar",
     "requireSpacesInsideObjectBrackets": "all",
     "disallowSpaceAfterObjectKeys": true,
     "requireSpaceAfterBinaryOperators": [

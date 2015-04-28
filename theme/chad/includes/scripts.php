@@ -85,6 +85,7 @@ function chad_enqueue_scripts ()
 {
 	$js_dir = trailingslashit ( get_template_directory_uri () ) . 'js/';
 	$img_dir = trailingslashit ( get_template_directory_uri () ) . 'images/';
+	$inc_dir = trailingslashit ( get_template_directory_uri () ) . 'includes/';
 	$suffix = hybrid_get_min_suffix ();
 
 	wp_enqueue_script (
@@ -106,7 +107,14 @@ function chad_enqueue_scripts ()
 		$img_dir . "grunticon.loader.js",
 		array(),
 		null,
-		true
+		false
+	);
+	wp_enqueue_script (
+		'grunticon-call',
+		$inc_dir . "grunticon-head.js",
+		array(),
+		null,
+		false
 	);
 	$site_parameters = array(
 		'site_url' => get_site_url(),

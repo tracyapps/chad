@@ -16,14 +16,14 @@
 		hybrid_post_terms (
 			array (
 				'taxonomy' => 'category',
-				'before' => '<p class="entry-meta categories">',
+				'before' => '<p class="entry-meta categories"><div class="icon icon-folder icon-left icon-color-primary icon-sm" data-grunticon-embed></div>',
 				'after' => '</p>',
 			)
 		);
 		hybrid_post_terms (
 			array (
 				'taxonomy' => 'post_tag',
-				'before' => '<p class="entry-meta tags">',
+				'before' => '<p class="entry-meta tags"><div class="icon icon-tag icon-left icon-color-primary icon-sm" data-grunticon-embed></div>',
 				'after' => '</p>',
 			)
 		);

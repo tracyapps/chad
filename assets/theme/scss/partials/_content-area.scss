@@ -63,6 +63,7 @@
 	}
 }
 
+
 .section {
 	position: relative;
 	padding: 5em 0;
@@ -121,6 +122,10 @@
 			padding-left: 0;
 			@include span-columns(8);
 		}
+	}
+
+	&#contact {
+		margin-bottom: 140px;
 	}
 }
 
@@ -384,6 +389,7 @@
 }
 
 .entry-footer {
+	@include faded-text-color-styles;
 
 	.entry-meta {
 		margin: 0;

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="120px" height="451px" viewBox="0 0 220 601" enable-background="new 0 0 220 601" xml:space="preserve">
+<g>
+	<g>
+		<path d="M81 21c1.7 1.1 3.3 2.3 4.9 3.5" class="decoration-style0"/>
+		<path d=" M94.565 32.746C139.58 84 90.4 190.9 50 179c-65.936-19.522-4.516-126.677 52-55 c7.688 9.8 168.7 154.2 55.6 433.9" class="decoration-style1"/>
+		<path d="M155.323 563.5 c-0.763 1.839-1.537 3.683-2.323 5.5" class="decoration-style0"/>
+	</g>
+</g>
+<polyline points="145.5,559.9 144.1,584.4 165.3,570.2" class="decoration-style0"/>
+</svg>

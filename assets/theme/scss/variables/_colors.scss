@@ -143,9 +143,9 @@ $table-border-color: $base-border-color;
 $code-background-color: $light-fog;
 $code-border-color: darken($base-border-color, 10);
 $code-font-color: $off-black;
-$entry-meta-font-color: $medium-gray;
-$entry-meta-link-color: $medium-gray;
-$entry-meta-link-color-hover: $base-link-color;
+$entry-meta-font-color: $transparent-text;
+$entry-meta-link-color: $transparent-link;
+$entry-meta-link-color-hover: $transparent-link-hover;
 $entry-meta-link-border-color: $base-link-color;
 $featured-media-background-color: $light-fog;
 $pre-background-color: $light-fog;
@@ -172,12 +172,12 @@ $media-player-unmute-button-color: $dark-gray;
 
 // Comment Section Colors
 //------------------------------------------------------------------------------
-$comments-background-color: $white;
+$comments-background-color: $light-fog;
 $comments-font-color: $base-font-color;
-$comment-background-color: $white;
+$comment-background-color: $light-fog;
 $comment-border-color: $base-border-color;
-$comment-header-background-color: $light-fog;
-$comment-author-header-background-color: lighten($seafoam, 50);
+$comment-header-background-color: $medium-fog;
+$comment-author-header-background-color: transparentize( $base-button-background-color, 0.9 );
 $comment-meta-link-color: $entry-meta-link-color;
 $comment-meta-link-color-hover: $entry-meta-link-color-hover;
 $comment-meta-link-border-color: $entry-meta-link-border-color;
@@ -190,8 +190,8 @@ $allowed-tags-background-color: $light-fog;
 
 // Pagination Colors
 //------------------------------------------------------------------------------
-$pagination-background-color: $white;
-$pagination-background-color-hover: $light-fog;
+$pagination-background-color: transparentize( $base-button-background-color, 0.5 );
+$pagination-background-color-hover: transparentize( $base-button-background-color, 0.3 );
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color: $base-font-color;
 $pagination-border-color: $base-border-color;

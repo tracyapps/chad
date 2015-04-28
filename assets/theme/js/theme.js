@@ -50,7 +50,7 @@ window.chad = window.chad || {};
 	savvior.init('#blog-grid', {
 		'screen and (max-width: 600px)': { columns: 1 },
 		'screen and (min-width: 600px) and (max-width: 900px)': { columns: 2 },
-		'screen and (min-width: 900px)' : { columns: 3 }
+		'screen and (min-width: 900px)': { columns: 3 }
 	});
 }());
 

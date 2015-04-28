@@ -18,50 +18,35 @@
 <?php get_header(); ?>
 
 	<div <?php hybrid_attr( 'site-inner' ); ?>>
-
 		<?php tha_content_before(); ?>
+		<div class="wrap index-wrap">
+			<main <?php hybrid_attr( 'content' ); ?>>
+				<?php tha_content_top(); ?>
+				<?php hybrid_get_menu( 'breadcrumbs' ); ?>
 
-		<main <?php hybrid_attr( 'content' ); ?>>
+				<?php if( !is_front_page() && !is_home() && !is_404() ) : ?>
+					<?php get_template_part( 'content/parts/loop-meta' ); ?>
+				<?php endif; ?>
 
-			<?php tha_content_top(); ?>
+				<?php if( have_posts() ) : ?>
+					<?php while( have_posts() ) : the_post(); ?>
+						<?php tha_entry_before(); ?>
+						<?php hybrid_get_content_template(); ?>
+						<?php tha_entry_after(); ?>
+					<?php endwhile; ?>
 
-			<?php hybrid_get_menu( 'breadcrumbs' ); ?>
+					<?php flagship_posts_navigation(); ?>
 
-			<?php if( !is_front_page() && !is_home() && !is_404() ) : ?>
+				<?php else : ?>
+					<?php get_template_part( 'content/error' ); ?>
+				<?php endif; ?>
 
-				<?php get_template_part( 'content/parts/loop-meta' ); ?>
+				<?php tha_content_bottom(); ?>
+			</main><!-- #content -->
 
-			<?php endif; ?>
-
-			<?php if( have_posts() ) : ?>
-
-				<?php while( have_posts() ) : the_post(); ?>
-
-					<?php tha_entry_before(); ?>
-
-					<?php hybrid_get_content_template(); ?>
-
-					<?php tha_entry_after(); ?>
-
-				<?php endwhile; ?>
-
-				<?php flagship_posts_navigation(); ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'content/error' ); ?>
-
-			<?php endif; ?>
-
-			<?php tha_content_bottom(); ?>
-
-		</main>
-		<!-- #content -->
-
-		<?php tha_content_after(); ?>
-
-		<?php hybrid_get_sidebar( 'primary' ); ?>
-
+			<?php tha_content_after(); ?>
+			<?php hybrid_get_sidebar( 'primary' ); ?>
+		</div><!--/.wrap-->
 	</div><!-- #site-inner -->
 
 <?php

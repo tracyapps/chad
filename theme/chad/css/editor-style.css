@@ -564,9 +564,30 @@ Common Classes
 .icon.alignleft, .icon.alignright, .icon.aligncenter {
   margin-bottom: 0px; }
 
+.icon-color-primary * {
+  fill: #f7941e !important; }
+
+.icon-left {
+  float: left;
+  margin: 4px 20px 4px 0; }
+
+.icon-right {
+  float: right;
+  margin: 4px 0 4px 20px; }
+
 .icon-md {
   width: 50px;
   height: 50px; }
+
+.icon-sm {
+  width: 17px;
+  height: 17px;
+  margin: 4px 10px;
+  display: block; }
+
+p:empty {
+  margin: 0;
+  padding: 0; }
 
 /* elevator :)
 --------------------------------------------- */
@@ -747,16 +768,16 @@ Flagship Styles
       display: inline-block;
       margin: 0 5px 5px; }
     .author-box .social-icons a {
-      color: #676869; }
+      color: rgba(30, 151, 172, 0.4); }
     .author-box .social-icons a:hover, .author-box .social-icons a:focus {
-      color: #1e97ac; }
+      color: rgba(38, 189, 215, 0.4); }
 
 .author-box-title {
   margin-bottom: 4px; }
   .author-box-title a {
-    color: #676869; }
+    color: rgba(30, 151, 172, 0.4); }
   .author-box-title a:hover, .author-box-title a:focus {
-    color: #1e97ac; }
+    color: rgba(38, 189, 215, 0.4); }
 
 /* Typography Formats
 --------------------------------------------- */

@@ -25,6 +25,16 @@ $site-header-starting-height-mobile: 200px;
 @mixin letterpress( $x, $y, $b, $color ) {
 	text-shadow: $x $y $b $color;
 }
+@mixin faded-text-color-styles {
+	color: $transparent-text;
+	a {
+		color:$transparent-link;
+
+		&:hover {
+			color: $transparent-link-hover;
+		}
+	}
+}
 
 @mixin inverse-text-color-styles {
 	color: $inverse-font-color;

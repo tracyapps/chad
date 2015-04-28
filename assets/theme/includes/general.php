@@ -50,6 +50,16 @@ function chad_excerpt_length ( $length )
 {
 	return 60;
 }
+
+/**
+ * change read more link text
+ */
+
+add_filter( 'the_content_more_link', 'chad_modify_read_more_link' );
+function chad_modify_read_more_link() {
+	return '<a class="readmore button" href="' . get_permalink() . '">Read more</a>';
+}
+
 /**
  * custom excerpt length. usage example: echo excerpt(25);
  **/
@@ -80,6 +90,7 @@ function hybridexcerpt( $limit ) {
 	return $hybridexcerpt;
 }
 
+
 /**
  * get meta fields
  *
@@ -109,7 +120,7 @@ function chad_loop_home_section( $section_key ) {
 	<section id='<?php esc_html_e( $section_data->post_name, 'chad' ); ?>' class='<?php echo esc_html( $section_key[ 'the_section_bg_color' ] ) . ' ' . esc_html( $section_layout ); ?> section' <?php if ( $deviceType == 'desktop' ) { echo ' data-type="background" data-speed="10" '; } ?>>
 		<div class="wrap">
 			<div class="section-main">
-				<h2 class="page-title"><div class="icon-<?php esc_html_e( $page_icon, 'chad' ); ?> icon icon-md alignleft"></div><?php esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
+				<h2 class="page-title"><?php if ( $page_icon != '' ) { ?><div class="icon-<?php esc_html_e( $page_icon, 'chad' ); ?> icon icon-md icon-left"></div><?php } esc_html_e( $section_key[ 'the_section_title' ], 'chad' ); ?></h2>
 				<p><?php echo apply_filters('the_content', $section_key[ 'the_section_content' ] ); ?></p>
 				<?php
 				if ( $section_key[ 'the_section_button_label' ] != '' ) {
@@ -157,7 +168,7 @@ function chad_loop_blog_posts( $num_of_posts ) { ?>
 				<h6 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
 				<?php if( has_post_thumbnail( get_the_ID() ) ) { ?>
 					<div class="post-featured-image-thumbnail">
-						<?php the_post_thumbnail( 'blog-featured-image-sm' ); ?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'blog-featured-image-sm' ); ?></a>
 					</div>
 				<?php }; ?>
 				<p><?php echo wp_kses_post( hybridexcerpt( 15 ), 'chad' ); ?></p>
@@ -204,15 +215,13 @@ function chad_svg_logo() {
 
 add_action( 'tha_content_before', 'chad_featured_image_page_header' );
 function chad_featured_image_page_header() {
-	if( ! is_front_page() ) {
+	if( ! is_front_page() && is_singular() ) {
 		if( has_post_thumbnail( get_the_ID(), 'full' ) ) {
 			//had a featured image
 			$imageid = get_post_thumbnail_id( get_the_ID() );
 			$imgurl = wp_get_attachment_image_src( $imageid, 'page-featured-image', false );
 
-			echo '<div id="page-featured-image" class="parallax-window" data-parallax="scroll" data-position-y="100px" data-speed="0.2" data-image-src="' . esc_url( $imgurl[0], 'chad' ) . '">';
-			//the_post_thumbnail( 'page-featured-image', array( 'data-speed' => '0.3', 'class' => 'parallax-slider' ) );
-			echo '</div>';
+			echo '<div id="page-featured-image" class="parallax-window" data-parallax="scroll" data-position-y="100px" data-speed="0.2" data-image-src="' . esc_url( $imgurl[0], 'chad' ) . '"> </div>';
 		} else {
 			//does not have a featured image
 			echo '<div id="page-featured-image" class="no-image orange"> </div>';
@@ -220,6 +229,63 @@ function chad_featured_image_page_header() {
 	}//end if NOT front page
 }
 
+/**
+ * adding svg decorations to the homepage, on a desktop (we'll worry about mobile later, if at all)
+ */
+
+add_action( 'tha_content_after', 'chad_add_svg_decoration_to_home' );
+function chad_add_svg_decoration_to_home() {
+	global $deviceType;
+	if( is_front_page() &&  $deviceType == 'desktop') { ?>
+
+
+		<script>
+			var templateDir = "<?php bloginfo('template_directory') ?>";
+			jQuery(document).ready(function($) {
+				var $about = jQuery('#about-chad'),
+					aboutPosition = $about.position(),
+					$aboutdecoration = $('<div id="svg-deco-about-section-arrow" class="decoration"></div>').insertAfter($about);
+					$aboutdecoration = $('#svg-deco-about-section-arrow' ).load( templateDir + '/includes/svg-decorations/dotted-arrow_flip-over-long.svg.php' );
+
+				$aboutdecoration.css({
+					position : 'absolute',
+					top : aboutPosition.top + 100,
+					left: '30%'
+				});
+				var $speaking = jQuery('#speaking'),
+					speakingPosition = $speaking.position(),
+					$speakingdecoration = $('<div id="svg-deco-speaking-section-arrow" class="decoration"></div>').insertAfter($speaking);
+				$speakingdecoration = $('#svg-deco-speaking-section-arrow' ).load( templateDir + '/includes/svg-decorations/dotted-arrow_curved-medium.svg.php' );
+
+				$speakingdecoration.css({
+					position : 'absolute',
+					top : speakingPosition.top + 310,
+					right: '10%'
+				});
+				var $blog = jQuery('#blog'),
+					blogPosition = $blog.position(),
+					$blogdecoration = $('<div id="svg-deco-blog-section-arrow" class="decoration"></div>').insertAfter($blog);
+				$blogdecoration = $('#svg-deco-blog-section-arrow' ).load( templateDir + '/includes/svg-decorations/dotted-arrow_small-circle.svg.php' );
+
+				$blogdecoration.css({
+					position : 'absolute',
+					top : blogPosition.top + 110,
+					right: '20%'
+				});
+				var $contact = jQuery('#contact'),
+					contactPosition = $contact.position(),
+					$contactdecoration = $('<div id="svg-deco-footer-section-arrow" class="decoration"></div>').insertAfter($contact);
+				$speakingdecoration = $('#svg-deco-footer-section-arrow' ).load( templateDir + '/includes/svg-decorations/dotted-line_long-horizontal.svg.php' );
+
+				$contactdecoration.css({
+					position : 'absolute',
+					top : contactPosition.top + 810,
+					left: '5%'
+				});
+			});
+		</script>
+	<?php } //end if front page AND a desktop computer
+}
 
 /**
  * adding a shortcode to add an SVG icon

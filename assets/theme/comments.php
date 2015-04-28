@@ -12,13 +12,10 @@
 <?php if( !post_password_required() ) : ?>
 
 	<?php tha_comments_before(); ?>
-
 	<section id="comments" class="comments-area">
 
 		<?php if( have_comments() ) : ?>
-
 			<h3 class="comments-number" id="comments-number"><?php comments_number(); ?></h3>
-
 			<ol class="comment-list">
 				<?php
 				wp_list_comments(
@@ -32,11 +29,8 @@
 			</ol><!-- .comment-list -->
 
 			<?php get_template_part( 'comment/navigation' ); ?>
-
 			<?php if( !comments_open() || !pings_open() ) : ?>
-
 				<?php get_template_part( 'comment/error' ); ?>
-
 			<?php endif; ?>
 
 		<?php endif; // End check for comments. ?>
@@ -48,5 +42,4 @@
 	<?php tha_comments_after(); ?>
 
 <?php
-
 endif;
