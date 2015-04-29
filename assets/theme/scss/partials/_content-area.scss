@@ -4,7 +4,7 @@
 	margin-top: $site-header-starting-height-mobile;
 
 	@include media( $small-screen-up ) {
-		margin-top: $site-header-starting-height-desktop;
+		margin-top: 420px;
 	}
 }
 #home {
@@ -70,61 +70,85 @@
 
 .section {
 	position: relative;
-	padding: 5em 0;
+	padding: 2em 0;
+
+	@include media( $smaller-screen-up ) {
+		padding: 5em 0;
+	}
 	.wrap {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
 
-		.section-aside {
-			@include span-columns(4);
-			padding: 1em;
+		@include media( $smaller-screen-up ) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+
+			.section-aside {
+				@include span-columns(4);
+				padding: 1em;
+			}
+			.section-main {
+				@include span-columns(8);
+				padding: 1em;
+			}
+
 		}
-		.section-main {
-			@include span-columns(8);
-			padding: 1em;
-		}
 	}
 
-	// default layout order
-	.section-main {
-		order: 1;
-		padding-left: 0;
-	}
-	.section-aside {
-		order: 2;
-		padding-right: 0;
-	}
-
-	//layout overrides: 2 col, with large aside (about page)
-	&.l-2col-large-aside {
-		min-height: 760px;
+	@include media( $smaller-screen-up ) {
+		// default layout order
 		.section-main {
-			padding: 1em 7em 6em 0;
+			order: 1;
+			padding-left: 0;
 		}
 		.section-aside {
-			position: relative;
-			img {
-				position: absolute;
-				max-width: none;
-				top: -250px;
-				right: -130px;
-				z-index: 150;
+			order: 2;
+			padding-right: 0;
+		}
+
+		//layout overrides: 2 col, with large aside (about page)
+		&.l-2col-large-aside {
+			min-height: 760px;
+			.section-main {
+				padding: 1em 7em 6em 0;
+			}
+			.section-aside {
+				position: relative;
+				img {
+					position: absolute;
+					max-width: none;
+					top: -250px;
+					right: -130px;
+					z-index: 150;
+				}
+			}
+		}
+
+		//layout overrides: 2 col, aside - main
+		&.l-2col-aside-main {
+			.section-main {
+				order: 2;
+				padding-right: 0;
+				@include span-columns(4);
+			}
+			.section-aside {
+				order: 1;
+				padding-left: 0;
+				@include span-columns(8);
 			}
 		}
 	}
 
-	//layout overrides: 2 col, aside - main
-	&.l-2col-aside-main {
-		.section-main {
-			order: 2;
-			padding-right: 0;
-			@include span-columns(4);
-		}
-		.section-aside {
-			order: 1;
-			padding-left: 0;
-			@include span-columns(8);
+	@media (min-width: $smaller-screen) and (max-width: $small-screen) {
+		&.l-2col-large-aside {
+			.section-aside {
+				img {
+					position: absolute;
+					max-width: 240%;
+					top: -150px;
+					right: -130px;
+					z-index: 150;
+				}
+			}
 		}
 	}
 
@@ -140,6 +164,7 @@
 	width: 100%;
 	height: 500px;
 	overflow: hidden;
+	background-position: 50% 50% !important;
 }
 .page-wrap {
 	margin-top: -300px;

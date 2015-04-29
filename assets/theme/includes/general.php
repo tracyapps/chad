@@ -220,8 +220,8 @@ function chad_featured_image_page_header() {
 			//had a featured image
 			$imageid = get_post_thumbnail_id( get_the_ID() );
 			$imgurl = wp_get_attachment_image_src( $imageid, 'page-featured-image', false );
-
 			echo '<div id="page-featured-image" class="parallax-window" data-parallax="scroll" data-position-y="100px" data-speed="0.2" data-image-src="' . esc_url( $imgurl[0], 'chad' ) . '"> </div>';
+
 		} else {
 			//does not have a featured image
 			echo '<div id="page-featured-image" class="no-image orange"> </div>';
@@ -236,7 +236,7 @@ function chad_featured_image_page_header() {
 add_action( 'tha_content_after', 'chad_add_svg_decoration_to_home' );
 function chad_add_svg_decoration_to_home() {
 	global $deviceType;
-	if( is_front_page() &&  $deviceType == 'desktop') { ?>
+	if( is_front_page() &&  $deviceType == 'desktop' ) { ?>
 
 
 		<script>
